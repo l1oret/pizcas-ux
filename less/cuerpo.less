@@ -1,0 +1,50 @@
+p {
+  text-rendering: optimizeLegibility;
+  font-size: @foxtrot;
+  line-height: @pizca;
+  margin: 0 0 @pizca;
+}
+
+ul,
+ol {
+  margin: 0 0 @pizca;
+  padding-left: @pizca;
+
+  ul,
+  ol {
+    margin-top: @pizca / 3;
+    margin-bottom: @pizca / 3;
+  }
+}
+
+ul li,
+ol li {
+  margin-bottom: @pizca / 3;
+}
+
+strong {
+  font-weight: 400;
+}
+
+em {
+  font-style: italic;
+}
+
+a {
+  color: @color-principal;
+  text-decoration: none;
+
+  &:hover,
+  &:active {
+    color: lighten( @color-principal, 5% );
+  }
+}
+
+code, kbd, pre, samp {
+  font-size: @foxtrot;
+  line-height: @foxtrot;
+}
+
+input, select, button, textarea {
+  line-height: inherit;
+}

@@ -1,0 +1,52 @@
+// Encabezados
+// http://csswizardry.com/2012/02/pragmatic-practical-font-sizing-in-css/
+// http://coding.smashingmagazine.com/2011/03/14/technical-web-typography-guidelines-and-techniques/
+h1, h2, h3, h4, h5, h6 {
+  text-rendering: optimizeLegibility;
+  font-weight: 300;
+}
+
+// Estilos encabezados ajustados para mantener el baseline vertical
+// http://alistapart.com/article/settingtypeontheweb
+h1, .alfa {
+  margin-top: -4px;
+  margin-bottom: @pizca + 4;
+  font-size: @alfa;
+  line-height: @pizca + @pizca + 10px;
+}
+
+h2, .bravo {
+  margin-top: -7px;
+  margin-bottom: 37px;
+  font-size: @bravo;
+  line-height: @pizca + @pizca;
+}
+
+h3, .charlie {
+  margin-top: -1px;
+  margin-bottom: @pizca + 1;
+  font-size: @charlie;
+  line-height: @pizca + 10px;
+}
+
+h4, .delta {
+  margin-top: 0;
+  margin-bottom: @pizca;
+  font-size: @delta;
+  line-height: @pizca + 10px;
+}
+
+h5, .echo {
+  margin-top: -1px;
+  margin-bottom: @pizca + 1;
+  font-size: @echo;
+  line-height: @pizca;
+}
+
+h6, .foxtrot {
+  margin-top: 0;
+  margin-bottom: @pizca;
+  font-size: @foxtrot;
+  line-height: @pizca;
+}
+
