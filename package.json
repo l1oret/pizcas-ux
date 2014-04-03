@@ -1,7 +1,7 @@
 {
-  "name": "pizcas-bootstrap",
-  "version": "0.0.0",
-  "description": "",
+  "name": "ux.apizcasyamizcas.es",
+  "version": "0.0.1",
+  "description": "Colección de elementos y patrones para el nuevo diseño de apizcasyamizcas.es",
   "main": "index.js",
   "author": "l1oret",
   "license": "MIT",
