@@ -1,1 +1,12 @@
+# Archivos o carpetas del SO
+.DS_Store
+._*
+Thumbs.db
+.cache
+.project
+.settings
+*.sublime-project
+*.sublime-workspace
+
+# Carpetas
 node_modules
