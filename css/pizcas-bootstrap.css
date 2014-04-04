@@ -470,6 +470,18 @@ a:hover,
 a:active {
   color: #f5b0c7;
 }
+blockquote {
+  margin: 0 0 30px;
+  padding: 0 30px;
+  font-style: italic;
+  border-left: 4px solid #f299b7;
+}
+blockquote p {
+  margin-bottom: 10px;
+}
+blockquote footer {
+  color: #cccccc;
+}
 code,
 kbd,
 pre,
