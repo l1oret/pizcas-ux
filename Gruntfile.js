@@ -1,51 +1,62 @@
-module.exports = function(grunt) {
+module.exports = function ( grunt ) {
 
   // Configuracion del proyecto
-  grunt.initConfig({
-    pkg: grunt.file.readJSON('package.json'),
+    grunt.initConfig( {
+        pkg: grunt.file.readJSON( "package.json" ),
 
+        banner: "/*! Pizcas UX */",
 
-      less: {
-        desarrollo: {
-          options: {
-            paths: [ "css" ]
-          },
-          files: {
-            "css/pizcas-bootstrap.css": "less/pizcas-bootstrap.less"
-          }
-        }
-      },
-
-      watch: {
-        options: {
-          livereload: true
+        less: {
+            desarrollo: {
+                options: {
+                    paths: [ "css" ]
+                },
+                files: {
+                    "css/pizcas-ux.css": "less/pizcas-ux.less"
+                }
+            }
         },
-        css: {
-          files: [ "less/*.less" ],
-          tasks: [ "less" ],
-          options: {
-            spawn: false,
-          },
+
+        cssmin: {
+            combine: {
+                options: {
+                    banner: "<%= banner %>"
+                },
+                files: {
+                    "css/pizcas-ux.min.css": [ "css/pizcas-ux.css" ]
+                }
+            }
         },
-      },
 
-      connect: {
-        server: {
-          options: {
-            port: 8000,
-            base: './'
-          }
+        watch: {
+            options: {
+                livereload: true
+            },
+            css: {
+                files: [ "less/*.less" ],
+                tasks: [ "less" ],
+                options: {
+                    spawn: false,
+                },
+            },
+        },
+
+        connect: {
+            server: {
+                options: {
+                    port: 8000,
+                    base: "./"
+                }
+            }
         }
-      }
+    } );
 
-  });
-
-
-  grunt.loadNpmTasks('grunt-contrib-less');
-  grunt.loadNpmTasks('grunt-contrib-watch');
-  grunt.loadNpmTasks('grunt-contrib-connect');
+  grunt.loadNpmTasks( "grunt-contrib-less" );
+  grunt.loadNpmTasks( "grunt-contrib-cssmin" );
+  grunt.loadNpmTasks( "grunt-contrib-watch" );
+  grunt.loadNpmTasks( "grunt-contrib-connect" );
 
   // Tareas
-  grunt.registerTask('default', ['less']);
-  grunt.registerTask('desarrollo', ['connect', 'watch']);
+  grunt.registerTask( "default", [ "less", "cssmin" ] );
+  grunt.registerTask( "desarrollo", [ "connect", "watch" ] );
 };
