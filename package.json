@@ -1,6 +1,7 @@
 {
   "name": "ux.apizcasyamizcas.es",
   "version": "0.0.1",
+  "homepage": "http://l1oret.github.io/pizcas-ux/",
   "description": "Colección de elementos y patrones para el nuevo diseño de apizcasyamizcas.es",
   "main": "index.js",
   "author": "l1oret",

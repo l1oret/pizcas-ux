@@ -4,7 +4,7 @@ module.exports = function ( grunt ) {
     grunt.initConfig( {
         pkg: grunt.file.readJSON( "package.json" ),
 
-        banner: "/*! Pizcas UX v<%= pkg.version %>, MIT License */",
+        banner: "/*! Pizcas UX v<%= pkg.version %>, MIT License, <%= pkg.homepage %> */",
 
         less: {
             desarrollo: {
