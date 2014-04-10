@@ -12,7 +12,8 @@ module.exports = function ( grunt ) {
                     paths: [ "css" ]
                 },
                 files: {
-                    "css/pizcas-ux.css": "less/pizcas-ux.less"
+                    "css/pizcas-ux.css": "less/pizcas-ux.less",
+                    "css/tema.css": "less/tema.less"
                 }
             }
         },
@@ -20,10 +21,12 @@ module.exports = function ( grunt ) {
         cssmin: {
             combine: {
                 options: {
-                    banner: "<%= banner %>"
+                    banner: "<%= banner %>",
+                    keepSpecialComments: 0
                 },
                 files: {
-                    "css/pizcas-ux.min.css": [ "css/pizcas-ux.css" ]
+                    "css/pizcas-ux.min.css": [ "css/pizcas-ux.css" ],
+                    "css/tema.min.css": [ "css/tema.css" ]
                 }
             }
         },
