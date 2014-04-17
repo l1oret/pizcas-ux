@@ -17,7 +17,7 @@ h1, .alfa {
 
 h2, .bravo {
   margin-top: -7px;
-  margin-bottom: 37px;
+  margin-bottom: @pizca + 7px;
   font-size: @bravo;
   line-height: @pizca + @pizca;
 }
@@ -50,3 +50,24 @@ h6, .foxtrot {
   line-height: @pizca;
 }
 
+// Tamaños extra grandes
+.giga {
+  margin-top: -7px;
+  margin-bottom: @pizca + 7px;
+  font-size: @giga;
+  line-height: @pizca + @pizca + @pizca + @pizca + 10px + 10px;
+}
+
+.mega {
+  margin-top: -2px;
+  margin-bottom: @pizca + 2px;
+  font-size: @mega;
+  line-height: @pizca + @pizca + @pizca + 10px;
+}
+
+.kilo {
+  margin-top: -3px;
+  margin-bottom: @pizca + 3px;
+  font-size: @kilo;
+  line-height: @pizca + @pizca + @pizca;
+}

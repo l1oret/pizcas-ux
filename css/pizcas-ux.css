@@ -434,6 +434,24 @@ h6,
   font-size: 18.54140915px;
   line-height: 30px;
 }
+.giga {
+  margin-top: -7px;
+  margin-bottom: 37px;
+  font-size: 127.07403096px;
+  line-height: 140px;
+}
+.mega {
+  margin-top: -2px;
+  margin-bottom: 32px;
+  font-size: 88.99px;
+  line-height: 100px;
+}
+.kilo {
+  margin-top: -3px;
+  margin-bottom: 33px;
+  font-size: 78.53772px;
+  line-height: 90px;
+}
 p {
   text-rendering: optimizeLegibility;
   font-size: 18.54140915px;
