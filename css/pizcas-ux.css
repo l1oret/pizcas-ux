@@ -383,6 +383,67 @@ body {
   line-height: 30px;
   color: #444444;
 }
+p {
+  text-rendering: optimizeLegibility;
+  font-size: 18.54140915px;
+  line-height: 30px;
+  margin: 0 0 30px;
+}
+ul,
+ol {
+  margin: 0 0 30px;
+  padding-left: 30px;
+}
+ul ul,
+ol ul,
+ul ol,
+ol ol {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+ul li,
+ol li {
+  margin-bottom: 10px;
+}
+strong {
+  font-weight: 400;
+}
+em {
+  font-style: italic;
+}
+a {
+  color: #f299b7;
+  text-decoration: none;
+}
+a:hover,
+a:active {
+  color: #f5b0c7;
+}
+blockquote {
+  margin: 0 0 30px;
+  padding: 0 30px;
+  font-style: italic;
+  border-left: 4px solid #f299b7;
+}
+blockquote p {
+  margin-bottom: 10px;
+}
+blockquote footer {
+  color: #cccccc;
+}
+code,
+kbd,
+pre,
+samp {
+  font-size: 18.54140915px;
+  line-height: 18.54140915px;
+}
+input,
+select,
+button,
+textarea {
+  line-height: inherit;
+}
 h1,
 h2,
 h3,
@@ -452,66 +513,22 @@ h6,
   font-size: 78.53772px;
   line-height: 90px;
 }
-p {
-  text-rendering: optimizeLegibility;
-  font-size: 18.54140915px;
-  line-height: 30px;
-  margin: 0 0 30px;
+.contenedor {
+  max-width: 870.908px;
+  margin: 0 auto;
 }
-ul,
-ol {
-  margin: 0 0 30px;
-  padding-left: 30px;
+.seccion {
+  margin-bottom: 30px;
+  padding: 30px 0;
 }
-ul ul,
-ol ul,
-ul ol,
-ol ol {
-  margin-top: 10px;
-  margin-bottom: 10px;
+.seccion--destacada {
+  background-color: #392814;
 }
-ul li,
-ol li {
-  margin-bottom: 10px;
+.seccion--destacada h1 {
+  color: #ffffff;
 }
-strong {
-  font-weight: 400;
-}
-em {
-  font-style: italic;
-}
-a {
-  color: #f299b7;
-  text-decoration: none;
-}
-a:hover,
-a:active {
-  color: #f5b0c7;
-}
-blockquote {
-  margin: 0 0 30px;
-  padding: 0 30px;
-  font-style: italic;
-  border-left: 4px solid #f299b7;
-}
-blockquote p {
-  margin-bottom: 10px;
-}
-blockquote footer {
-  color: #cccccc;
-}
-code,
-kbd,
-pre,
-samp {
-  font-size: 18.54140915px;
-  line-height: 18.54140915px;
-}
-input,
-select,
-button,
-textarea {
-  line-height: inherit;
+.seccion--destacada p {
+  color: #d9d9d9;
 }
 .forma {
   display: inline-block;

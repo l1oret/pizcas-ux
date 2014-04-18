@@ -37,7 +37,7 @@ module.exports = function ( grunt ) {
             },
             css: {
                 files: [ "less/*.less" ],
-                tasks: [ "less" ],
+                tasks: [ "less", "cssmin" ],
                 options: {
                     spawn: false,
                 },
