@@ -9,24 +9,13 @@ module.exports = function ( grunt ) {
         less: {
             desarrollo: {
                 options: {
-                    paths: [ "css" ]
+                    paths: [ "css" ],
+                    report: "min",
+                    cleancss: true
                 },
                 files: {
-                    "css/pizcas-ux.css": "less/pizcas-ux.less",
-                    "css/tema.css": "less/tema.less"
-                }
-            }
-        },
-
-        cssmin: {
-            combine: {
-                options: {
-                    banner: "<%= banner %>",
-                    keepSpecialComments: 0
-                },
-                files: {
-                    "css/pizcas-ux.min.css": [ "css/pizcas-ux.css" ],
-                    "css/tema.min.css": [ "css/tema.css" ]
+                    "css/pizcas-ux.min.css": "less/pizcas-ux.less",
+                    "css/tema.min.css": "less/tema.less"
                 }
             }
         },
@@ -37,7 +26,7 @@ module.exports = function ( grunt ) {
             },
             css: {
                 files: [ "less/*.less" ],
-                tasks: [ "less", "cssmin" ],
+                tasks: [ "less" ],
                 options: {
                     spawn: false,
                 },
@@ -55,11 +44,10 @@ module.exports = function ( grunt ) {
     } );
 
   grunt.loadNpmTasks( "grunt-contrib-less" );
-  grunt.loadNpmTasks( "grunt-contrib-cssmin" );
   grunt.loadNpmTasks( "grunt-contrib-watch" );
   grunt.loadNpmTasks( "grunt-contrib-connect" );
 
   // Tareas
-  grunt.registerTask( "default", [ "less", "cssmin" ] );
+  grunt.registerTask( "default", [ "less" ] );
   grunt.registerTask( "desarrollo", [ "connect", "watch" ] );
 };
