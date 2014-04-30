@@ -1,9 +1,27 @@
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 body {
-  font-size: 115.88125%; // 115.88125% = 18.541px
+  margin: 8px auto @pizca auto;
+  max-width: 986.810px;
+  padding: 0 0 0 @pizca / 2;
+  width: 100%;
+
+  color: @color-texto;
+  font-size: 115.88125%; /* 115.88125% = 18.541px = @foxtrot */
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
   line-height: @pizca;
-  color: @color-texto;
 }
 
 p {
@@ -71,4 +89,3 @@ code, kbd, pre, samp {
 input, select, button, textarea {
   line-height: inherit;
 }
-

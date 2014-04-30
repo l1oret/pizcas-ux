@@ -1,49 +1,54 @@
 @import "variables.less";
 
 body {
-  margin: 8px auto 90px auto;
-  width: 100%;
   background-image: url(../imagenes/10.png);
 }
 
-.titulo-seccion {
-  color: #3cddc9;
-}
 
-.contenedor-color {
+.color {
   height: @pizca * 2;
   color: #ffffff;
   margin-bottom: @pizca;
 }
 
-p + .contenedor-color {
+p + .color {
   margin-top: -20px;
 }
 
-.contenedor-color--base {
+.color--demo {
+  background-color: #3cddc9;
+  color: #ffffff;
+  padding: @pizca;
+
+  p {
+    margin-bottom: 0;
+  }
+}
+
+.color--base {
   background-color: @color-base;
 }
 
-.contenedor-color--base-claro {
+.color--base-claro {
   background-color: lighten( @color-base, 5% );
 }
 
-.contenedor-color--principal {
+.color--principal {
   background-color: @color-principal;
 }
 
-.contenedor-color--secundario {
+.color--secundario {
   background-color: @color-secundario;
 }
 
-.contenedor-color--principal-claro {
+.color--principal-claro {
   background-color: lighten( @color-principal, 5% );
 }
 
-.contenedor-color--secundario-claro {
+.color--secundario-claro {
   background-color: lighten( @color-secundario, 5% );
 }
 
-.contenedor-color--texto {
+.color--texto {
   background-color: @color-texto;
 }

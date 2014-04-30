@@ -1,17 +1,19 @@
 /**
  * Escala usada para definir todos los tamaños:
  * http://modularscale.com/scale/?px1=55&px2=30&ra1=1.618&ra2=0
- *
- * Mas información:
  * http://alistapart.com/article/more-meaningful-typography
  */
 
-/* Tamaños clave */
+/**
+ * Tamaños clave
+ */
 @pizca:   30px;
 @mizca:   55px;
 @trizca:  1.618;
 
-/* Tamaños encabezados */
+/**
+ * Tamaños encabezados
+ */
 @alfa:    @mizca;             /*  55     */
 @bravo:   @pizca * @trizca;   /*  48.54  */
 @charlie: @alfa / @trizca;    /*  33.993 */
@@ -19,17 +21,23 @@
 @echo:    @charlie / @trizca; /*  21.009 */
 @foxtrot: @delta / @trizca;   /*  18.541 */
 
-/* Tamaños extra grandes */
+/**
+ * Tamaños extra grandes
+ */
 @giga:    @kilo * @trizca;    /* 127.074 */
 @mega:    @alfa * @trizca;    /*  88.99  */
 @kilo:    @bravo * @trizca;   /*  78.538 */
 
-/* Tamaños extra pequeños */
+/**
+ * Tamaños extra pequeños
+ */
 @mili:    @echo / @trizca;    /*  12.985 */
 @micro:   @foxtrot / @trizca; /*  11.459 */
 @nano:    @mili / @trizca;    /*   8.025 */
 
-/* Colores */
+/**
+ * Colores
+ */
 @color-texto:       #444444;
 @color-base:        #CCCCCC;
 @color-principal:   #F299B7;

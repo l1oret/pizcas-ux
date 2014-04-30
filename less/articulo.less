@@ -1,0 +1,28 @@
+.articulo h1 {
+  margin-bottom: 4px;
+}
+
+.articulo__metadatos,
+.articulo__etiquetas {
+  color: @color-base;
+}
+
+.articulo__metadatos .forma--gorro-chef,
+.articulo__etiquetas .forma--chocolate {
+  fill: @color-base;
+  width: @foxtrot;
+  height: @foxtrot;
+  position: relative;
+  top: 2px;
+}
+
+.articulo__etiquetas a {
+
+  .forma--chocolate {
+    fill: @color-principal;
+  }
+
+  &:hover .forma--chocolate {
+    fill: lighten( @color-principal, 5% );
+  }
+}

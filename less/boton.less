@@ -1,4 +1,6 @@
-/* Definición del botón base */
+/**
+ * Definición del botón base
+ */
 .boton {
   border: none;
   display: inline-block;
@@ -14,14 +16,16 @@
     background-color: lighten( @color-base, 5% );
   }
 
-  .forma-flecha-derecha {
+  .forma--flecha-derecha {
     height: @foxtrot - 5;
     width: @foxtrot - 5;
     fill: #FFF;
   }
 }
 
-/* Tipos de botones */
+/**
+ * Tipos de botones
+ */
 .boton--principal {
   background-color: @color-principal;
   color: #FFF;
@@ -54,24 +58,26 @@
     color: lighten( @color-principal, 5% );
   }
 
-  .forma-flecha-derecha {
+  .forma--flecha-derecha {
     fill: @color-principal;
   }
 
-  &:hover .forma-flecha-derecha,
-  &:focus .forma-flecha-derecha {
+  &:hover .forma--flecha-derecha,
+  &:focus .forma--flecha-derecha {
     fill: lighten( @color-principal, 5% );
   }
 }
 
-/* Tamaños de los botones */
+/**
+ * Tamaños de los botones
+ */
 .boton--s {
   padding: 5px 16px;
   font-size: @micro;
 
-  .forma-flecha-derecha {
+  .forma--flecha-derecha {
 
-    // Ajustar tamaño forma
+    /* Ajustar tamaño forma */
     height: ( @micro ) - 3;
     width: ( @micro ) - 3;
   }
@@ -81,9 +87,9 @@
   font-size: @delta;
   padding: 25px;
 
-  .forma-flecha-derecha {
+  .forma--flecha-derecha {
 
-    // Ajustar tamaño forma
+    /* Ajustar tamaño forma */
     height: @delta - 9;
     width: @delta - 9;
   }
