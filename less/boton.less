@@ -13,9 +13,10 @@
   &:hover,
   &:focus {
     color: #FFF;
-    background-color: lighten( @color-base, 5% );
+    background-color: @color-base-claro;
   }
 
+  /* Ajustar tamaño forma */
   .forma--flecha-derecha {
     height: @foxtrot - 5;
     width: @foxtrot - 5;
@@ -32,7 +33,7 @@
 
   &:hover,
   &:focus {
-    background-color: lighten( @color-principal, 5% );
+    background-color: @color-principal-claro;
     color: #FFF;
   }
 }
@@ -43,7 +44,7 @@
 
   &:hover,
   &:focus {
-    background-color: lighten( @color-secundario, 5% );
+    background-color: @color-secundario-claro;
     color: #FFF;
   }
 }
@@ -55,7 +56,7 @@
   &:hover,
   &:focus {
     background-color: transparent;
-    color: lighten( @color-principal, 5% );
+    color: @color-principal-claro;
   }
 
   .forma--flecha-derecha {
@@ -64,7 +65,7 @@
 
   &:hover .forma--flecha-derecha,
   &:focus .forma--flecha-derecha {
-    fill: lighten( @color-principal, 5% );
+    fill: @color-principal-claro;
   }
 }
 

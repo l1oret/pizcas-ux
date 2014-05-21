@@ -1,7 +1,36 @@
+.seccion {
+  margin: 8px auto @pizca auto;
+  max-width: 986.810px;
+  padding: 0 0 0 @pizca / 2;
+  width: 100%;
+}
+
+.seccion--destacada {
+  background-color: #FFF;
+  max-width: 100%;
+}
+
+.seccion--fondo-diagonal {
+  background-color: #FFF;
+  background-image:
+    repeating-linear-gradient(  45deg, transparent, transparent @pizca, rgba( red( @color-principal ), green( @color-principal ), blue( @color-principal ), .3 ) @pizca, rgba( red( @color-principal ), green( @color-principal ), blue( @color-principal ), .3 ) @pizca + @pizca ),
+    repeating-linear-gradient( -45deg, transparent, transparent @pizca, rgba( red( @color-principal ), green( @color-principal ), blue( @color-principal ), .3 ) @pizca, rgba( red( @color-principal ), green( @color-principal ), blue( @color-principal ), .3 ) @pizca + @pizca );
+}
+
+.seccion--bordes {
+  border-top: 1px solid lighten( @color-principal-claro, 5% );
+  border-bottom: 1px solid lighten( @color-principal-claro, 5% )
+}
+
+
 .contenedor {
   margin-left: -@pizca / 2;
 
   .cf()
+}
+
+.contenedor .contenedor {
+  margin-right: -@pizca / 2;
 }
 
 .contenedor__lectura,

@@ -4,6 +4,13 @@ body {
   background-image: url(../imagenes/10.png);
 }
 
+.grid {
+  margin-bottom: @pizca;
+}
+
+.grid .contenedor {
+  margin-bottom: @pizca / 3;
+}
 
 .color {
   height: @pizca * 2;
@@ -30,7 +37,7 @@ p + .color {
 }
 
 .color--base-claro {
-  background-color: lighten( @color-base, 5% );
+  background-color: @color-base-claro;
 }
 
 .color--principal {
@@ -42,11 +49,11 @@ p + .color {
 }
 
 .color--principal-claro {
-  background-color: lighten( @color-principal, 5% );
+  background-color: @color-principal-claro;
 }
 
 .color--secundario-claro {
-  background-color: lighten( @color-secundario, 5% );
+  background-color: @color-secundario-claro;
 }
 
 .color--texto {

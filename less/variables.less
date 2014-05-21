@@ -1,15 +1,20 @@
 /**
  * Escala usada para definir todos los tamaños:
  * http://modularscale.com/scale/?px1=55&px2=30&ra1=1.618&ra2=0
+ * Más información:
  * http://alistapart.com/article/more-meaningful-typography
  */
 
 /**
  * Tamaños clave
+ *
+ * 1. Tamaño clave principal
+ * 2. Tamaño clave secundario
+ * 3. Número aureo para calcular los tamaños en base a los dos tamaños claves
  */
-@pizca:   30px;
-@mizca:   55px;
-@trizca:  1.618;
+@pizca:   30px;               /* [ 1 ] */
+@mizca:   55px;               /* [ 2 ] */
+@trizca:  1.618;              /* [ 3 ] */
 
 /**
  * Tamaños encabezados
@@ -38,7 +43,10 @@
 /**
  * Colores
  */
-@color-texto:       #444444;
-@color-base:        #CCCCCC;
-@color-principal:   #F299B7;
-@color-secundario:  #392814;
+@color-texto:             #444444;
+@color-base:              #CCCCCC;
+@color-base-claro:        lighten( @color-base, 5% );
+@color-principal:         #F299B7;
+@color-principal-claro:   lighten( @color-principal, 5% );
+@color-secundario:        #392814;
+@color-secundario-claro:  lighten( @color-secundario, 5% );
