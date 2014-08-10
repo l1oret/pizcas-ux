@@ -58,6 +58,10 @@ a {
   &:hover,
   &:active {
     color: @color-principal-claro;
+
+    img {
+      opacity: 0.9;
+    }
   }
 }
 
@@ -84,3 +88,24 @@ code, kbd, pre, samp {
 input, select, button, textarea {
   line-height: inherit;
 }
+
+figure {
+  width: 100%;
+  height: auto;
+  margin: 0 0 @pizca 0;
+  padding: @pizca / 3;
+  background-color: @color-base-claro;
+
+  img {
+    width: inherit;
+    height: inherit;
+  }
+
+  figcaption {
+    font-size: @mili;
+    color: @color-texto;
+    text-align: center;
+  }
+}
+
+
