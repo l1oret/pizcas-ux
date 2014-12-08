@@ -1,0 +1,174 @@
+.forma {
+  display: inline-block;
+  fill: #FFF;
+  width: 32px;
+  height: 32px;
+}
+
+
+
+
+
+.imagen--full {
+  width: 100%;
+  height: auto;
+}
+
+.imagen--circulo {
+  border-radius: 50%;
+}
+
+
+
+
+
+.lista {
+  padding-left: 0;
+  list-style: none;
+
+  ul {
+    list-style: none;
+  }
+}
+
+.lista--puntos li {
+
+  /* IcoMoon - Free */
+  background-image: url( data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz
+    48IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZH
+    IDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy
+    9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPjxzdmcgdmVyc2lvbj0i
+    MS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdm
+    ciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5
+    L3hsaW5rIiB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHZpZXdCb3
+    g9IjAgMCAzMiAzMiI+PGcgaWQ9Imljb21vb24taWdub3JlIj48
+    bGluZSBzdHJva2Utd2lkdGg9IjEiIHgxPSIiIHkxPSIiIHgyPS
+    IiIHkyPSIiIHN0cm9rZT0iIzQ0OUZEQiIgb3BhY2l0eT0iIj48
+    L2xpbmU+PC9nPjxwYXRoIGQ9Ik0xNiAwYy04LjgzNyAwLTE2ID
+    cuMTYzLTE2IDE2czcuMTYzIDE2IDE2IDE2IDE2LTcuMTYzIDE2
+    LTE2LTcuMTYzLTE2LTE2LTE2ek0xNiAyOGMtNi42MjcgMC0xMi
+    01LjM3My0xMi0xMnM1LjM3My0xMiAxMi0xMmM2LjYyNyAwIDEy
+    IDUuMzczIDEyIDEycy01LjM3MyAxMi0xMiAxMnpNMTAgMTZjMC
+    0zLjMxNCAyLjY4Ni02IDYtNnM2IDIuNjg2IDYgNmMwIDMuMzE0
+    LTIuNjg2IDYtNiA2cy02LTIuNjg2LTYtNnoiIGZpbGw9IiNmMj
+    k5YjciPjwvcGF0aD48L3N2Zz4= );
+
+  background-repeat: no-repeat;
+  background-position: left center;
+  padding-left: 30px;
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+
+.lista--puntos-color-secundario li {
+  background-image: url( data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz
+    48IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZH
+    IDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy
+    9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPjxzdmcgdmVyc2lvbj0i
+    MS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdm
+    ciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5
+    L3hsaW5rIiB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHZpZXdCb3
+    g9IjAgMCAzMiAzMiI+PGcgaWQ9Imljb21vb24taWdub3JlIj48
+    bGluZSBzdHJva2Utd2lkdGg9IjEiIHgxPSIiIHkxPSIiIHgyPS
+    IiIHkyPSIiIHN0cm9rZT0iIzQ0OUZEQiIgb3BhY2l0eT0iIj48
+    L2xpbmU+PC9nPjxwYXRoIGQ9Ik0xNiAwYy04LjgzNyAwLTE2ID
+    cuMTYzLTE2IDE2czcuMTYzIDE2IDE2IDE2IDE2LTcuMTYzIDE2
+    LTE2LTcuMTYzLTE2LTE2LTE2ek0xNiAyOGMtNi42MjcgMC0xMi
+    01LjM3My0xMi0xMnM1LjM3My0xMiAxMi0xMmM2LjYyNyAwIDEy
+    IDUuMzczIDEyIDEycy01LjM3MyAxMi0xMiAxMnpNMTAgMTZjMC
+    0zLjMxNCAyLjY4Ni02IDYtNnM2IDIuNjg2IDYgNmMwIDMuMzE0
+    LTIuNjg2IDYtNiA2cy02LTIuNjg2LTYtNnoiIGZpbGw9IiMzOT
+    I4MTQiPjwvcGF0aD48L3N2Zz4= );
+}
+
+.lista--puntos-color-secundario a {
+  color: @color-secundario;
+
+  &:hover {
+    color: @color-secundario-claro;
+  }
+}
+
+.lista--sin-puntos {
+  list-style: none;
+  padding-left: 0;
+}
+
+.lista--sin-puntos-color-secundario a {
+  color: @color-secundario;
+
+  &:hover {
+    color: @color-secundario-claro;
+  }
+
+  .forma {
+    fill: @color-secundario;
+  }
+
+  &:hover .forma {
+    fill: lighten( @color-secundario-claro, 5% );
+  }
+}
+
+.lista .lista {
+  padding-left: 40px;
+}
+
+
+.lazo {
+  background-color: #ffffff;
+  font-size:18px;
+  position:absolute;
+  bottom:25px;
+  right:-16px;
+  padding:5px 0 5px 5px;
+  color:#ffffff;
+  border-right: 1px solid #efefef;
+
+  a {
+    border-top: 1px dashed @color-principal;
+    border-left: 1px dashed @color-principal;
+    border-bottom: 1px dashed @color-principal;
+    padding: 10px 10px 10px 10px;
+    max-width: 250px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: block;
+
+    .forma {
+      fill: @color-principal;
+      height: @foxtrot - 5;
+      width: @foxtrot - 5;
+    }
+
+    &:hover .forma,
+    &:focus .forma {
+      fill: @color-principal-claro;
+    }
+  }
+
+  &:after {
+    content:"";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top:0;
+    margin: 0 0 0 15px;
+    right: 0;
+    top: 62px;
+    border-left: 15px solid @color-base;
+    border-bottom: 10px solid transparent;
+  }
+}
+
+
+.media--con-lazo {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+}
+

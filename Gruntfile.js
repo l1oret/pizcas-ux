@@ -33,6 +33,30 @@ module.exports = function ( grunt ) {
             },
         },
 
+        concat: {
+            options: {
+                separator: ';',
+            },
+            dist: {
+                src: [
+                    "js/jquery-1.11.1.min.js",
+                    "js/imagelightbox.js"
+                ],
+                dest: "js/pizcas-ux.js",
+            },
+        },
+
+        uglify: {
+            options: {
+                mangle: false
+            },
+            my_target: {
+                files: {
+                    "js/pizcas-ux.min.js": [ "js/pizcas-ux.js" ]
+                }
+            }
+        },
+
         connect: {
             server: {
                 options: {
@@ -46,8 +70,10 @@ module.exports = function ( grunt ) {
   grunt.loadNpmTasks( "grunt-contrib-less" );
   grunt.loadNpmTasks( "grunt-contrib-watch" );
   grunt.loadNpmTasks( "grunt-contrib-connect" );
+  grunt.loadNpmTasks( "grunt-contrib-concat" );
+  grunt.loadNpmTasks( "grunt-contrib-uglify" );
 
   // Tareas
-  grunt.registerTask( "default", [ "less" ] );
+  grunt.registerTask( "default", [ "less", "concat", "uglify" ] );
   grunt.registerTask( "desarrollo", [ "connect", "watch" ] );
 };

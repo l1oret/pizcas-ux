@@ -76,4 +76,92 @@ h6, .foxtrot {
   margin-bottom: @pizca + 3px;
   font-size: @kilo;
   line-height: @pizca + @pizca + @pizca;
+
+  .forma {
+    fill: @color-texto;
+    height: @pizca + 10px + 10px;
+    width: @pizca + 10px + 10px;
+  }
+}
+
+@media ( max-width: 480px ) {
+  h1, .alfa,
+  h2, .bravo {
+    margin-top: -1px;
+    margin-bottom: @pizca + 1;
+    font-size: @charlie;
+    line-height: @pizca + 10px;
+  }
+
+  .giga,
+  .mega,
+  .kilo {
+    margin-top: -7px;
+    margin-bottom: @pizca + 7px;
+    font-size: @bravo;
+    line-height: @pizca + @pizca;
+
+    .forma {
+      fill: @color-texto;
+      height: @pizca;
+      width: @pizca;
+    }
+  }
+}
+
+/**
+ * Encabezados destacados
+ */
+.encabezado-etiqueta {
+  font-family: 'Lobster Two', cursive;
+  color: #fff;
+  font-size: @delta;
+
+  .forma {
+    display: block;
+    margin: 5px auto 0 auto;
+  }
+}
+
+.encabezado-etiqueta--redondo {
+  position: relative;
+  height: 140px;
+  width: 140px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: @delta + 3;
+  background-color: @color-secundario;
+  padding-top: 17px;
+  margin: @pizca + @pizca auto @pizca auto;
+
+  /* Agujero cuerda sujeción */
+  background-image: radial-gradient( #fff 15%, transparent 15% );
+  background-size: 20px 20px;
+  background-position: 60px 0px;
+  background-repeat: no-repeat;
+
+  /* Borde de puntos */
+  &:before {
+    border-radius: 50%;
+    top: 2px;
+    left: 2px;
+    position: absolute;
+    content: "";
+    width: 136px;
+    height: 136px;
+    display: block;
+    border: 2px dotted white;
+  }
+
+  /* Cuerda sujecion */
+  &:after {
+    content: "";
+    position: absolute;
+    top: -60px;
+    left: 69px;
+    background-color: @color-secundario;
+    width: 2px;
+    height: 60px;
+    display: block;
+  }
 }

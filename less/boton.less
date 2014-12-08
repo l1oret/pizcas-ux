@@ -9,15 +9,17 @@
   color: #FFF;
   font-size: @foxtrot;
   text-transform: uppercase;
+  white-space: nowrap;
 
   &:hover,
   &:focus {
     color: #FFF;
     background-color: @color-base-claro;
+    outline: 0;
   }
 
   /* Ajustar tamaño forma */
-  .forma--flecha-derecha {
+  .forma {
     height: @foxtrot - 5;
     width: @foxtrot - 5;
     fill: #FFF;
@@ -49,17 +51,6 @@
   }
 }
 
-.boton--alternativo {
-  background-color: @color-alternativo;
-  color: #FFF;
-
-  &:hover,
-  &:focus {
-    background-color: @color-alternativo-claro;
-    color: #FFF;
-  }
-}
-
 .boton--transparente {
   background-color: transparent;
   color: @color-principal;
@@ -70,13 +61,45 @@
     color: @color-principal-claro;
   }
 
-  .forma--flecha-derecha {
+  .forma {
     fill: @color-principal;
   }
 
-  &:hover .forma--flecha-derecha,
-  &:focus .forma--flecha-derecha {
+  &:hover .forma,
+  &:focus .forma {
     fill: @color-principal-claro;
+  }
+}
+
+.boton--twitter {
+  background-color: #41b7d8;
+
+  &:hover {
+    background-color: lighten( #41b7d8, 10% );
+  }
+}
+
+.boton--facebook {
+  background-color: #3b5997;
+
+  &:hover {
+    background-color: lighten( #3b5997, 10% );
+  }
+}
+
+.boton--google {
+  background-color: #d64937;
+
+  &:hover {
+    background-color: lighten( #d64937, 10% );
+  }
+}
+
+.boton--pinterest {
+  background-color: #89161b;
+
+  &:hover {
+    background-color: lighten( #89161b, 10% );
   }
 }
 
@@ -87,7 +110,7 @@
   padding: 5px 16px;
   font-size: @micro;
 
-  .forma--flecha-derecha {
+  .forma {
 
     /* Ajustar tamaño forma */
     height: ( @micro ) - 3;
@@ -99,7 +122,7 @@
   font-size: @delta;
   padding: 25px;
 
-  .forma--flecha-derecha {
+  .forma {
 
     /* Ajustar tamaño forma */
     height: @delta - 9;
@@ -107,6 +130,21 @@
   }
 }
 
+@media ( max-width: 480px ) {
+  .boton--l {
+    font-size: @foxtrot;
+    padding: 15px 23px;
+
+    .forma {
+
+      /* Ajustar tamaño forma */
+      height: @foxtrot - 5;
+      width: @foxtrot - 5;
+    }
+  }
+}
+
+/* Ajustar el margen cuando hay botón a continuación de un párrafo */
 p + .boton {
   margin-bottom: @pizca;
 }

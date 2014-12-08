@@ -1,0 +1,57 @@
+.formulario--vertical {
+
+  label {
+    width: 100%;
+    display: block;
+    margin-bottom: 9px;
+  }
+}
+
+.formulario__campo {
+  margin-bottom: 18px;
+}
+
+.formulario__campo--un-tercio input {
+  width: 33% !important;
+
+  @media ( max-width: 480px ) {
+    width: 100% !important;
+  }
+}
+
+
+
+label {
+  font-weight: bold;
+}
+
+input[ type="text" ],
+textarea {
+  outline: none;
+}
+
+textarea {
+  min-height: 200px;
+}
+
+input[ type="text" ],
+input[ type="email" ],
+textarea {
+  width: 100%;
+  padding: @pizca / 3;
+  border-radius: 3px;
+  border: 1px solid @color-base;
+
+  &:focus {
+    // Default
+    outline: thin dotted;
+    // WebKit
+    outline: 5px auto @color-principal-claro;
+    outline-offset: -2px;
+  }
+
+  &::selection {
+    color: #fff;
+    background: @color-principal-claro;
+  }
+}

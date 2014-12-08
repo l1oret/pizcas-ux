@@ -18,27 +18,42 @@
 
 /**
  * Tamaños encabezados
+ *
+ * 1. 55px
+ * 2. 48.54px
+ * 3. 33.993px
+ * 4. 30px
+ * 5. 21.009px
+ * 6. 18.541px
  */
-@alfa:    @mizca;             /*  55     */
-@bravo:   @pizca * @trizca;   /*  48.54  */
-@charlie: @alfa / @trizca;    /*  33.993 */
-@delta:   @pizca;             /*  30     */
-@echo:    @charlie / @trizca; /*  21.009 */
-@foxtrot: @delta / @trizca;   /*  18.541 */
+@alfa:    @mizca;             /* [ 1 ] */
+@bravo:   @pizca * @trizca;   /* [ 2 ] */
+@charlie: @alfa / @trizca;    /* [ 3 ] */
+@delta:   @pizca;             /* [ 4 ] */
+@echo:    @charlie / @trizca; /* [ 5 ] */
+@foxtrot: @delta / @trizca;   /* [ 6 ] */
 
 /**
  * Tamaños extra grandes
+ *
+ * 1. 127.074px
+ * 2. 88.99px
+ * 3. 78.538px
  */
-@giga:    @kilo * @trizca;    /* 127.074 */
-@mega:    @alfa * @trizca;    /*  88.99  */
-@kilo:    @bravo * @trizca;   /*  78.538 */
+@giga:    @kilo * @trizca;    /* [ 1 ] */
+@mega:    @alfa * @trizca;    /* [ 2 ] */
+@kilo:    @bravo * @trizca;   /* [ 3 ] */
 
 /**
  * Tamaños extra pequeños
+ *
+ * 1. 12.985px
+ * 2. 11.459px
+ * 3.  8.025px
  */
-@mili:    @echo / @trizca;    /*  12.985 */
-@micro:   @foxtrot / @trizca; /*  11.459 */
-@nano:    @mili / @trizca;    /*   8.025 */
+@mili:    @echo / @trizca;    /* [ 1 ] */
+@micro:   @foxtrot / @trizca; /* [ 2 ] */
+@nano:    @mili / @trizca;    /* [ 3 ] */
 
 /**
  * Colores
@@ -50,6 +65,3 @@
 @color-principal-claro:   lighten( @color-principal, 5% );
 @color-secundario:        #392814;
 @color-secundario-claro:  lighten( @color-secundario, 5% );
-@color-alternativo:       #5FCEBD;
-@color-alternativo-claro: lighten( @color-alternativo, 5% );
-

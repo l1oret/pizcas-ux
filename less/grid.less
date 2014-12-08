@@ -1,3 +1,6 @@
+/**
+ * Sección por defecto
+ */
 .seccion {
   margin: 8px auto @pizca auto;
   max-width: 986.810px;
@@ -7,31 +10,27 @@
 
 /**
  * Secciones destacadas
- * Fondos basados en: http://lea.verou.me/css3patterns/
+ * Fondos css basados en: http://lea.verou.me/css3patterns/
  */
 .seccion--destacada {
   background-color: #FFF;
   max-width: 100%;
 }
 
-.seccion--secundaria {
-  a {
-    color: @color-secundario;
-
-    &:hover {
-      color: @color-secundario-claro;
-    }
-  }
-}
-
-
-
+/**
+ * Secciones washi-tape estrellas y ajedrez
+ */
 .seccion--washi-tape-estrellas,
 .seccion--washi-tape-ajedrez {
   padding: 90px 0;
   position: relative;
   margin-top: 48px;
   margin-bottom: 60px;
+
+  .grid,
+  .seccion {
+    margin: 0 auto;
+  }
 }
 
 .seccion--washi-tape-estrellas {
@@ -39,11 +38,19 @@
 }
 
 .seccion--washi-tape-ajedrez {
-  background-color: lighten( @color-alternativo, 30% );
+  background-color: #fff;
+
+  h1 {
+    color: @color-secundario;
+  }
+
+  .forma--chocolate {
+    fill: @color-secundario;
+    width: 50px;
+    height: 50px;
+  }
 }
 
-
-// Ajedrez
 .seccion--washi-tape-estrellas__apertura,
 .seccion--washi-tape-ajedrez__apertura {
     top: -30px;
@@ -52,8 +59,8 @@
 
 .seccion--washi-tape-ajedrez__apertura,
 .seccion--washi-tape-ajedrez__cierre {
-    border-top: 2px solid @color-alternativo;
-    border-bottom: 2px solid @color-alternativo;
+    border-top: 2px solid @color-secundario-claro;
+    border-bottom: 2px solid @color-secundario-claro;
 
     -webkit-transform:rotate(-1deg); /* Opera, Chrome, and Safari */
         -ms-transform:rotate(-1deg); /* IE 9 */
@@ -65,8 +72,8 @@
     display: block;
     content: "";
     background-color: #fefefe;
-    background-image: linear-gradient(45deg, @color-alternativo 25%, transparent 25%, transparent 75%, @color-alternativo 75%, @color-alternativo),
-    linear-gradient(-45deg, @color-alternativo 25%, transparent 25%, transparent 75%, @color-alternativo 75%, @color-alternativo);
+    background-image: linear-gradient(45deg, @color-secundario-claro 25%, transparent 25%, transparent 75%, @color-secundario-claro 75%, @color-secundario-claro),
+    linear-gradient(-45deg, @color-secundario-claro 25%, transparent 25%, transparent 75%, @color-secundario-claro 75%, @color-secundario-claro);
     background-size:15px 15px;
   }
 
@@ -76,12 +83,6 @@
     left: 0px;
   }
 
-
-
-
-
-
-// Estrellas
 .seccion--washi-tape-estrellas__apertura,
 .seccion--washi-tape-estrellas__cierre {
     border-top: 2px dotted #f5b0c7;
@@ -97,42 +98,142 @@
     display: block;
     content: "";
     background:
-    linear-gradient(324deg, #fff 4%,   transparent 4%) -70px 43px,
-    linear-gradient( 36deg, #fff 4%,   transparent 4%) 30px 43px,
-    linear-gradient( 72deg, #f5b0c7 8.5%, transparent 8.5%) 30px 43px,
-    linear-gradient(288deg, #f5b0c7 8.5%, transparent 8.5%) -70px 43px,
-    linear-gradient(216deg, #f5b0c7 7.5%, transparent 7.5%) -70px 23px,
-    linear-gradient(144deg, #f5b0c7 7.5%, transparent 7.5%) 30px 23px,
-    linear-gradient(324deg, #fff 4%,   transparent 4%) -20px 93px,
-    linear-gradient( 36deg, #fff 4%,   transparent 4%) 80px 93px,
-    linear-gradient( 72deg, #f5b0c7 8.5%, transparent 8.5%) 80px 93px,
-    linear-gradient(288deg, #f5b0c7 8.5%, transparent 8.5%) -20px 93px,
-    linear-gradient(216deg, #f5b0c7 7.5%, transparent 7.5%) -20px 73px,
-    linear-gradient(144deg, #f5b0c7 7.5%, transparent 7.5%) 80px 73px;
+    linear-gradient( 324deg, #fff 4%,      transparent 4% )   -70px 43px,
+    linear-gradient(  36deg, #fff 4%,      transparent 4% )    30px 43px,
+    linear-gradient(  72deg, #f5b0c7 8.5%, transparent 8.5% )  30px 43px,
+    linear-gradient( 288deg, #f5b0c7 8.5%, transparent 8.5% ) -70px 43px,
+    linear-gradient( 216deg, #f5b0c7 7.5%, transparent 7.5% ) -70px 23px,
+    linear-gradient( 144deg, #f5b0c7 7.5%, transparent 7.5% )  30px 23px,
+    linear-gradient( 324deg, #fff 4%,      transparent 4% )   -20px 93px,
+    linear-gradient(  36deg, #fff 4%,      transparent 4% )    80px 93px,
+    linear-gradient(  72deg, #f5b0c7 8.5%, transparent 8.5% )  80px 93px,
+    linear-gradient( 288deg, #f5b0c7 8.5%, transparent 8.5% ) -20px 93px,
+    linear-gradient( 216deg, #f5b0c7 7.5%, transparent 7.5% ) -20px 73px,
+    linear-gradient( 144deg, #f5b0c7 7.5%, transparent 7.5% )  80px 73px;
     background-color: #fff;
     background-size: 100px 100px;
 }
 
-// Mantel
+/**
+ * Seccion fondo mantel
+ */
 .seccion--fondo-diagonal {
   background-color: #FFF;
   background-image:
-    repeating-linear-gradient(  45deg, transparent, transparent @pizca, rgba( red( @color-principal ), green( @color-principal ), blue( @color-principal ), .3 ) @pizca, rgba( red( @color-principal ), green( @color-principal ), blue( @color-principal ), .3 ) @pizca + @pizca ),
-    repeating-linear-gradient( -45deg, transparent, transparent @pizca, rgba( red( @color-principal ), green( @color-principal ), blue( @color-principal ), .3 ) @pizca, rgba( red( @color-principal ), green( @color-principal ), blue( @color-principal ), .3 ) @pizca + @pizca );
+    repeating-linear-gradient(  45deg, transparent, transparent @pizca, rgba( red( @color-principal ), green( @color-principal ), blue( @color-principal ), .15 ) @pizca, rgba( red( @color-principal ), green( @color-principal ), blue( @color-principal ), .15 ) @pizca + @pizca ),
+    repeating-linear-gradient( -45deg, transparent, transparent @pizca, rgba( red( @color-principal ), green( @color-principal ), blue( @color-principal ), .15 ) @pizca, rgba( red( @color-principal ), green( @color-principal ), blue( @color-principal ), .15 ) @pizca + @pizca );
 }
 
-// Banderines
+/**
+ * Seccion banderines
+ */
 .seccion--banderines {
   padding: 150px 0 @pizca 0;
   background-image: url(../images/cuerda-banderines.png);
   background-repeat: repeat-x;
 }
 
-// Bordes
+/**
+ * Complemento bordes para la sección fondo mantel
+ */
 .seccion--bordes {
   border-top: 1px solid lighten( @color-principal-claro, 5% );
   border-bottom: 1px solid lighten( @color-principal-claro, 5% )
 }
+
+/**
+ * Seccion restaurantes
+ *
+ * Fondo basado en: http://codepen.io/zerospree/pen/yompF
+ */
+.seccion--restaurantes {
+  padding-bottom: 80px;
+}
+
+.seccion--restaurantes__contenido {
+  width: 590px;
+  margin: 30px auto 50px 0;
+
+  h1 {
+    transform: skew( -10deg ) rotate( -10deg );
+    color: @color-secundario;
+    text-align: center;
+    border-top: 18px double @color-secundario;
+    border-bottom: 18px double @color-secundario;
+    margin: 0;
+    width: 590px;
+    text-shadow: 3px 4px @color-base-claro;
+    font-family: 'Lobster Two', cursive;
+    padding-bottom: 20px;
+  }
+
+  .forma {
+    fill: @color-secundario !important;
+    width: 45px;
+    height: 45px;
+    margin: 0 15px;
+  }
+}
+
+.seccion--restaurantes__apertura {
+  text-transform: none;
+  transform: skew( -10deg ) rotate( -10deg );
+  display: block;
+  margin: 0 0 -10px -5px;
+  color: #FFFFFF;
+  padding: 0 0 0 13px;
+  line-height: 60px;
+
+  &::before {
+    content: '';
+    border: 40px solid transparent;
+    border-left: 250px solid @color-secundario;
+    position: absolute;
+    transform: rotate( 9deg ) skew( 9deg );
+    margin-left: -8px;
+    z-index: -1;
+  }
+}
+
+.seccion--restaurantes__cierre {
+  p {
+    padding: 0;
+    margin-top: -50px;
+    transform: skew( -10deg ) rotate( -10deg );
+  }
+}
+
+@media ( min-width: 481px ) and ( max-width: 1024px ) {
+  .seccion--restaurantes__apertura {
+    display: none;
+  }
+}
+
+@media ( min-width: 321px ) and ( max-width: 480px ) {
+  .seccion--restaurantes__contenido {
+    margin-top: 12px !important;
+  }
+}
+
+@media ( max-width: 480px ) {
+  .seccion--restaurantes {
+    padding-bottom: 0;
+  }
+
+  .seccion--restaurantes__contenido {
+    width: 270px;
+    margin-top: 0;
+
+    h1 {
+      width: 270px;
+    }
+
+    .forma {
+      display: none;
+    }
+  }
+}
+
 
 /**
  * Contenedores
