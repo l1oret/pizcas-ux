@@ -15,6 +15,7 @@ module.exports = function ( grunt ) {
                 },
                 files: {
                     "css/pizcas-ux.min.css": "less/pizcas-ux.less",
+                    "css/pizcas-ux-fuentes.min.css": "less/fuentes.less",
                     "css/tema.min.css": "less/tema.less"
                 }
             }

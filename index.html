@@ -3,332 +3,322 @@
 <head>
   <title>Pizcas UX</title>
 
-  <!-- <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400" rel="stylesheet" type="text/css"> -->
-  <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400,300|Lobster+Two' rel='stylesheet' type='text/css'>
-
   <link rel="stylesheet" type="text/css" href="css/pizcas-ux.min.css">
   <link rel="stylesheet" type="text/css" href="css/tema.min.css">
 </head>
 
 <body>
-<svg display="none" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-  <defs>
-    <g id="forma-flecha-derecha">
-      <path d="M25 18.031l-13.563 13.313q-0.656 0.656-1.594 0.656t-1.594-0.656l-1.594-1.594q-0.656-0.656-0.656-1.594t0.656-1.594l10.563-10.563-10.563-10.563q-0.656-0.656-0.656-1.594t0.656-1.594l1.594-1.594q0.656-0.656 1.594-0.656t1.594 0.656l13.563 13.375q1 1 1 1.984t-1 2.016z" />
-    </g>
+  <svg display="none" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+      <g id="forma-flecha-derecha">
+        <path d="M25 18.031l-13.563 13.313q-0.656 0.656-1.594 0.656t-1.594-0.656l-1.594-1.594q-0.656-0.656-0.656-1.594t0.656-1.594l10.563-10.563-10.563-10.563q-0.656-0.656-0.656-1.594t0.656-1.594l1.594-1.594q0.656-0.656 1.594-0.656t1.594 0.656l13.563 13.375q1 1 1 1.984t-1 2.016z" />
+      </g>
 
-    <g id="forma-flecha-izquierda">
-      <path d="M25 18.031l-13.563 13.313q-0.656 0.656-1.594 0.656t-1.594-0.656l-1.594-1.594q-0.656-0.656-0.656-1.594t0.656-1.594l10.563-10.563-10.563-10.563q-0.656-0.656-0.656-1.594t0.656-1.594l1.594-1.594q0.656-0.656 1.594-0.656t1.594 0.656l13.563 13.375q1 1 1 1.984t-1 2.016z" transform="rotate( 180 16 16 )"/>
-    </g>
+      <g id="forma-flecha-izquierda">
+        <path d="M25 18.031l-13.563 13.313q-0.656 0.656-1.594 0.656t-1.594-0.656l-1.594-1.594q-0.656-0.656-0.656-1.594t0.656-1.594l10.563-10.563-10.563-10.563q-0.656-0.656-0.656-1.594t0.656-1.594l1.594-1.594q0.656-0.656 1.594-0.656t1.594 0.656l13.563 13.375q1 1 1 1.984t-1 2.016z" transform="rotate( 180 16 16 )"/>
+      </g>
 
-    <g id="forma-cerrar">
-      <path d="M31.708 25.708c-0-0-0-0-0-0l-9.708-9.708 9.708-9.708c0-0 0-0 0-0 0.105-0.105 0.18-0.227 0.229-0.357 0.133-0.356 0.057-0.771-0.229-1.057l-4.586-4.586c-0.286-0.286-0.702-0.361-1.057-0.229-0.13 0.048-0.252 0.124-0.357 0.228 0 0-0 0-0 0l-9.708 9.708-9.708-9.708c-0-0-0-0-0-0-0.105-0.104-0.227-0.18-0.357-0.228-0.356-0.133-0.771-0.057-1.057 0.229l-4.586 4.586c-0.286 0.286-0.361 0.702-0.229 1.057 0.049 0.13 0.124 0.252 0.229 0.357 0 0 0 0 0 0l9.708 9.708-9.708 9.708c-0 0-0 0-0 0-0.104 0.105-0.18 0.227-0.229 0.357-0.133 0.355-0.057 0.771 0.229 1.057l4.586 4.586c0.286 0.286 0.702 0.361 1.057 0.229 0.13-0.049 0.252-0.124 0.357-0.229 0-0 0-0 0-0l9.708-9.708 9.708 9.708c0 0 0 0 0 0 0.105 0.105 0.227 0.18 0.357 0.229 0.356 0.133 0.771 0.057 1.057-0.229l4.586-4.586c0.286-0.286 0.362-0.702 0.229-1.057-0.049-0.13-0.124-0.252-0.229-0.357z"></path>
-    </g>
+      <g id="forma-cerrar">
+        <path d="M31.708 25.708c-0-0-0-0-0-0l-9.708-9.708 9.708-9.708c0-0 0-0 0-0 0.105-0.105 0.18-0.227 0.229-0.357 0.133-0.356 0.057-0.771-0.229-1.057l-4.586-4.586c-0.286-0.286-0.702-0.361-1.057-0.229-0.13 0.048-0.252 0.124-0.357 0.228 0 0-0 0-0 0l-9.708 9.708-9.708-9.708c-0-0-0-0-0-0-0.105-0.104-0.227-0.18-0.357-0.228-0.356-0.133-0.771-0.057-1.057 0.229l-4.586 4.586c-0.286 0.286-0.361 0.702-0.229 1.057 0.049 0.13 0.124 0.252 0.229 0.357 0 0 0 0 0 0l9.708 9.708-9.708 9.708c-0 0-0 0-0 0-0.104 0.105-0.18 0.227-0.229 0.357-0.133 0.355-0.057 0.771 0.229 1.057l4.586 4.586c0.286 0.286 0.702 0.361 1.057 0.229 0.13-0.049 0.252-0.124 0.357-0.229 0-0 0-0 0-0l9.708-9.708 9.708 9.708c0 0 0 0 0 0 0.105 0.105 0.227 0.18 0.357 0.229 0.356 0.133 0.771 0.057 1.057-0.229l4.586-4.586c0.286-0.286 0.362-0.702 0.229-1.057-0.049-0.13-0.124-0.252-0.229-0.357z"></path>
+      </g>
 
-    <g id="forma-gorro-chef">
-      <path d="M29.938 13.938q-0.469 0.5-0.969 1.063t-1.266 1.5-1.234 1.875-0.469 1.625q0 0.844-2.922 1.422t-7.078 0.578-7.078-0.578-2.922-1.422q0-0.906-0.844-2.266t-1.578-2.188-1.453-1.547q-2.125-2.063-2.125-5 0-2.906 2.047-4.953t4.953-2.047q0.719 0 1.5 0.156-0.5 1.281-0.5 2.844 0 3.344 2.063 5.563-0.063-1.688-0.063-3.563 0-2.906 1.75-4.953t4.25-2.047 4.25 2.047 1.75 4.953q0 1.906-0.063 3.563 2.063-2.219 2.063-5.563 0-1.563-0.5-2.844 0.781-0.156 1.5-0.156 2.906 0 4.953 2.047t2.047 4.953-2.063 4.938zM15.984 24q4.141 0 7.078-0.594t2.938-1.406v8q0 0.813-2.938 1.406t-7.078 0.594-7.063-0.594-2.922-1.406v-8q0 0.844 2.922 1.422t7.063 0.578z" />
-    </g>
+      <g id="forma-gorro-chef">
+        <path d="M29.938 13.938q-0.469 0.5-0.969 1.063t-1.266 1.5-1.234 1.875-0.469 1.625q0 0.844-2.922 1.422t-7.078 0.578-7.078-0.578-2.922-1.422q0-0.906-0.844-2.266t-1.578-2.188-1.453-1.547q-2.125-2.063-2.125-5 0-2.906 2.047-4.953t4.953-2.047q0.719 0 1.5 0.156-0.5 1.281-0.5 2.844 0 3.344 2.063 5.563-0.063-1.688-0.063-3.563 0-2.906 1.75-4.953t4.25-2.047 4.25 2.047 1.75 4.953q0 1.906-0.063 3.563 2.063-2.219 2.063-5.563 0-1.563-0.5-2.844 0.781-0.156 1.5-0.156 2.906 0 4.953 2.047t2.047 4.953-2.063 4.938zM15.984 24q4.141 0 7.078-0.594t2.938-1.406v8q0 0.813-2.938 1.406t-7.078 0.594-7.063-0.594-2.922-1.406v-8q0 0.844 2.922 1.422t7.063 0.578z" />
+      </g>
 
-    <g id="forma-chocolate">
-      <path d="M30 26h-11.688q1.125 0.563 1.5 1.203t0.094 1.219-0.703 1.078-0.734 0.969-0.188 0.719q-0.469 0.813-0.969 0.813-0.219 0-1.109-0.797t-2.094-1.813-1.953-1.391h-10.156q-0.813 0-1.406-0.594t-0.594-1.406v-18q0-0.844 0.578-1.422t1.422-0.578h8q1.375 0 2.703-0.625t2.125-1.375 1.438-1.375 0.766-0.625q0.25 0 0.422 0.031t0.359 0.266 0.188 0.703q-0.969 1.688-0.969 4 0 0.406 0.063 1h12.906q0.813 0 1.406 0.578t0.594 1.422v14q0 0.844-0.578 1.422t-1.422 0.578zM13.594 8h-11.594v18h11.594q-0.188-0.156-0.453-0.422t-0.703-1.047-0.438-1.531q0-0.781 0.297-1.375t1.297-1.625q0.438-0.469 0.438-1.156t-0.313-1.453-0.703-1.516-0.703-1.547-0.313-1.328q0-1.156 0.391-2.406t0.797-1.906zM21 10h-4q-0.406 0-0.703 0.297t-0.297 0.703v4q0 0.406 0.297 0.703t0.703 0.297 0.703-0.297 0.297-0.703v-3h3q0.406 0 0.703-0.297t0.297-0.703-0.297-0.703-0.703-0.297zM21 18h-4q-0.406 0-0.703 0.297t-0.297 0.703v4q0 0.406 0.297 0.703t0.703 0.297 0.703-0.297 0.297-0.703v-3h3q0.406 0 0.703-0.297t0.297-0.703-0.297-0.703-0.703-0.297zM29 10h-4q-0.406 0-0.703 0.297t-0.297 0.703v4q0 0.406 0.297 0.703t0.703 0.297 0.703-0.297 0.297-0.703v-3h3q0.406 0 0.703-0.297t0.297-0.703-0.297-0.703-0.703-0.297zM29 18h-4q-0.406 0-0.703 0.297t-0.297 0.703v4q0 0.406 0.297 0.703t0.703 0.297 0.703-0.297 0.297-0.703v-3h3q0.406 0 0.703-0.297t0.297-0.703-0.297-0.703-0.703-0.297z" />
-    </g>
+      <g id="forma-chocolate">
+        <path d="M30 26h-11.688q1.125 0.563 1.5 1.203t0.094 1.219-0.703 1.078-0.734 0.969-0.188 0.719q-0.469 0.813-0.969 0.813-0.219 0-1.109-0.797t-2.094-1.813-1.953-1.391h-10.156q-0.813 0-1.406-0.594t-0.594-1.406v-18q0-0.844 0.578-1.422t1.422-0.578h8q1.375 0 2.703-0.625t2.125-1.375 1.438-1.375 0.766-0.625q0.25 0 0.422 0.031t0.359 0.266 0.188 0.703q-0.969 1.688-0.969 4 0 0.406 0.063 1h12.906q0.813 0 1.406 0.578t0.594 1.422v14q0 0.844-0.578 1.422t-1.422 0.578zM13.594 8h-11.594v18h11.594q-0.188-0.156-0.453-0.422t-0.703-1.047-0.438-1.531q0-0.781 0.297-1.375t1.297-1.625q0.438-0.469 0.438-1.156t-0.313-1.453-0.703-1.516-0.703-1.547-0.313-1.328q0-1.156 0.391-2.406t0.797-1.906zM21 10h-4q-0.406 0-0.703 0.297t-0.297 0.703v4q0 0.406 0.297 0.703t0.703 0.297 0.703-0.297 0.297-0.703v-3h3q0.406 0 0.703-0.297t0.297-0.703-0.297-0.703-0.703-0.297zM21 18h-4q-0.406 0-0.703 0.297t-0.297 0.703v4q0 0.406 0.297 0.703t0.703 0.297 0.703-0.297 0.297-0.703v-3h3q0.406 0 0.703-0.297t0.297-0.703-0.297-0.703-0.703-0.297zM29 10h-4q-0.406 0-0.703 0.297t-0.297 0.703v4q0 0.406 0.297 0.703t0.703 0.297 0.703-0.297 0.297-0.703v-3h3q0.406 0 0.703-0.297t0.297-0.703-0.297-0.703-0.703-0.297zM29 18h-4q-0.406 0-0.703 0.297t-0.297 0.703v4q0 0.406 0.297 0.703t0.703 0.297 0.703-0.297 0.297-0.703v-3h3q0.406 0 0.703-0.297t0.297-0.703-0.297-0.703-0.703-0.297z" />
+      </g>
 
-    <!-- IcoMoon - Free -->
-    <g id="forma-estrella">
-      <path d="M32 12.408l-11.056-1.607-4.944-10.018-4.944 10.018-11.056 1.607 8 7.798-1.889 11.011 9.889-5.199 9.889 5.199-1.889-11.011 8-7.798z" />
-    </g>
+      <g id="forma-estrella">
+        <path d="M32 12.408l-11.056-1.607-4.944-10.018-4.944 10.018-11.056 1.607 8 7.798-1.889 11.011 9.889-5.199 9.889 5.199-1.889-11.011 8-7.798z" />
+      </g>
 
-    <g id="forma-menu">
-      <path d="M26 28h-2v0.594q0 1.656-0.922 2.641t-2.234 0.703l-15.688-3.094q-1.313-0.25-2.234-1.594t-0.922-3v-20.25q0-1.656 1.172-2.828t2.828-1.172h20q1.656 0 2.828 1.172t1.172 2.828v20q0 1.656-1.172 2.828t-2.828 1.172zM6 13.031q0 1.438 0.938 2.625 0.125 0.188 0.672 0.594t0.969 0.859 0.422 0.891v4q0 0.469 0.984 0.859t3.016 0.891q1.219 0.313 2.109 0.234t1.391-0.359 0.5-0.625v-4q0-0.438 0.422-0.828t1-0.703 0.672-0.406q0.156-0.125 0.453-0.281t0.375-0.328 0.078-0.609q0-1.406-0.906-2.594t-2.156-1.438q-0.781-0.156-1.469 0.156-0.938-1.594-2.484-1.906t-2.453 0.906q-0.719-0.563-1.469-0.719-1.281-0.25-2.172 0.563t-0.891 2.219zM28 5.438q0-1.438-1.016-2.438t-2.422-1h-14.531l10.813 2.125q1.313 0.281 2.234 1.625t0.922 2.969v17.281h0.563q1.406 0 2.422-1.016t1.016-2.422v-17.125z" />
-    </g>
+      <g id="forma-menu">
+        <path d="M26 28h-2v0.594q0 1.656-0.922 2.641t-2.234 0.703l-15.688-3.094q-1.313-0.25-2.234-1.594t-0.922-3v-20.25q0-1.656 1.172-2.828t2.828-1.172h20q1.656 0 2.828 1.172t1.172 2.828v20q0 1.656-1.172 2.828t-2.828 1.172zM6 13.031q0 1.438 0.938 2.625 0.125 0.188 0.672 0.594t0.969 0.859 0.422 0.891v4q0 0.469 0.984 0.859t3.016 0.891q1.219 0.313 2.109 0.234t1.391-0.359 0.5-0.625v-4q0-0.438 0.422-0.828t1-0.703 0.672-0.406q0.156-0.125 0.453-0.281t0.375-0.328 0.078-0.609q0-1.406-0.906-2.594t-2.156-1.438q-0.781-0.156-1.469 0.156-0.938-1.594-2.484-1.906t-2.453 0.906q-0.719-0.563-1.469-0.719-1.281-0.25-2.172 0.563t-0.891 2.219zM28 5.438q0-1.438-1.016-2.438t-2.422-1h-14.531l10.813 2.125q1.313 0.281 2.234 1.625t0.922 2.969v17.281h0.563q1.406 0 2.422-1.016t1.016-2.422v-17.125z" />
+      </g>
 
-    <g id="forma-helado">
-      <path d="M25 10h-18q-0.406 0-0.703-0.297t-0.297-0.703q0-1.063 0.469-1.672t1.531-1.328q0.094-2.438 1.859-4.219t4.141-1.781q2.281 0 3.969 1.531t1.969 3.781q0.719-0.313 1.563-0.313 1.906 0 3.203 1.094t1.297 2.906q0 0.406-0.297 0.703t-0.703 0.297zM8 12h16q0.813 0 1.406 0.594t0.594 1.406l-8 16q0 0.813-0.594 1.406t-1.422 0.594-1.406-0.594-0.578-1.406l-8-16q0-0.813 0.594-1.406t1.406-0.594z" />
-    </g>
+      <g id="forma-helado">
+        <path d="M25 10h-18q-0.406 0-0.703-0.297t-0.297-0.703q0-1.063 0.469-1.672t1.531-1.328q0.094-2.438 1.859-4.219t4.141-1.781q2.281 0 3.969 1.531t1.969 3.781q0.719-0.313 1.563-0.313 1.906 0 3.203 1.094t1.297 2.906q0 0.406-0.297 0.703t-0.703 0.297zM8 12h16q0.813 0 1.406 0.594t0.594 1.406l-8 16q0 0.813-0.594 1.406t-1.422 0.594-1.406-0.594-0.578-1.406l-8-16q0-0.813 0.594-1.406t1.406-0.594z" />
+      </g>
 
-    <!-- IcoMoon - Free -->
-    <g id="forma-googleplus">
-      <path d="M13.656 25.568c0 2.346-1.45 4.2-5.555 4.349-2.406-1.368-4.422-3.342-5.841-5.715 0.74-1.828 3.053-3.22 5.697-3.191 0.751 0.008 1.45 0.129 2.086 0.334 1.747 1.215 3.156 1.974 3.51 3.358 0.066 0.28 0.103 0.569 0.103 0.864zM16 0c-4.623 0-8.787 1.962-11.708 5.097 1.154-0.639 2.517-1.020 3.966-1.020 2.096 0 8.014 0 8.014 0l-1.791 1.879h-2.103c1.484 0.85 2.274 2.601 2.274 4.532 0 1.772-0.982 3.199-2.368 4.283-1.352 1.056-1.609 1.499-1.609 2.398 0 0.767 1.616 1.909 2.359 2.467 2.588 1.941 3.112 3.162 3.112 5.59 0 2.46-2.154 4.91-5.808 5.742 1.761 0.667 3.67 1.033 5.664 1.033 8.837 0 16-7.163 16-16s-7.163-16-16-16zM24 12v4h-2v-4h-4v-2h4v-4h2v4h4v2h-4zM11.43 10.608c0.373 2.837-0.87 4.662-3.029 4.598-2.16-0.065-4.213-2.047-4.586-4.883-0.373-2.837 1.076-5.008 3.235-4.944s4.007 2.392 4.379 5.228zM6.903 20.065c-2.334 0-4.316 0.805-5.714 1.996-0.766-1.869-1.189-3.915-1.189-6.060 0-1.774 0.289-3.48 0.822-5.075 0.23 3.108 2.417 5.506 6.030 5.506 0.266 0 0.524-0.014 0.777-0.032-0.248 0.476-0.426 1.006-0.426 1.562 0 0.937 0.515 1.471 1.152 2.090-0.481 0-0.946 0.013-1.454 0.013z" />
-    </g>
+      <g id="forma-googleplus">
+        <path d="M13.656 25.568c0 2.346-1.45 4.2-5.555 4.349-2.406-1.368-4.422-3.342-5.841-5.715 0.74-1.828 3.053-3.22 5.697-3.191 0.751 0.008 1.45 0.129 2.086 0.334 1.747 1.215 3.156 1.974 3.51 3.358 0.066 0.28 0.103 0.569 0.103 0.864zM16 0c-4.623 0-8.787 1.962-11.708 5.097 1.154-0.639 2.517-1.020 3.966-1.020 2.096 0 8.014 0 8.014 0l-1.791 1.879h-2.103c1.484 0.85 2.274 2.601 2.274 4.532 0 1.772-0.982 3.199-2.368 4.283-1.352 1.056-1.609 1.499-1.609 2.398 0 0.767 1.616 1.909 2.359 2.467 2.588 1.941 3.112 3.162 3.112 5.59 0 2.46-2.154 4.91-5.808 5.742 1.761 0.667 3.67 1.033 5.664 1.033 8.837 0 16-7.163 16-16s-7.163-16-16-16zM24 12v4h-2v-4h-4v-2h4v-4h2v4h4v2h-4zM11.43 10.608c0.373 2.837-0.87 4.662-3.029 4.598-2.16-0.065-4.213-2.047-4.586-4.883-0.373-2.837 1.076-5.008 3.235-4.944s4.007 2.392 4.379 5.228zM6.903 20.065c-2.334 0-4.316 0.805-5.714 1.996-0.766-1.869-1.189-3.915-1.189-6.060 0-1.774 0.289-3.48 0.822-5.075 0.23 3.108 2.417 5.506 6.030 5.506 0.266 0 0.524-0.014 0.777-0.032-0.248 0.476-0.426 1.006-0.426 1.562 0 0.937 0.515 1.471 1.152 2.090-0.481 0-0.946 0.013-1.454 0.013z" />
+      </g>
 
-    <!-- IcoMoon - Free -->
-    <g id="forma-facebook">
-      <path d="M16 0c8.837 0 16 7.163 16 16 0 8.159-6.107 14.892-14 15.876v-11.876h5.5l0.5-4h-6v-2c0-1.105 0.895-2 2-2h4v-4h-4c-3.314 0-6 2.686-6 6v2h-3v4h3v11.876c-7.893-0.984-14-7.717-14-15.876 0-8.837 7.163-16 16-16z" />
-    </g>
+      <g id="forma-facebook">
+        <path d="M16 0c8.837 0 16 7.163 16 16 0 8.159-6.107 14.892-14 15.876v-11.876h5.5l0.5-4h-6v-2c0-1.105 0.895-2 2-2h4v-4h-4c-3.314 0-6 2.686-6 6v2h-3v4h3v11.876c-7.893-0.984-14-7.717-14-15.876 0-8.837 7.163-16 16-16z" />
+      </g>
 
-    <!-- IcoMoon - Free -->
-    <g id="forma-twitter">
-      <path d="M16 0c-8.837 0-16 7.163-16 16s7.163 16 16 16 16-7.163 16-16-7.163-16-16-16zM25.195 11.284c0.009 0.203 0.014 0.408 0.014 0.614 0 6.269-4.772 13.499-13.499 13.499-2.679 0-5.173-0.785-7.273-2.132 0.371 0.044 0.749 0.066 1.132 0.066 2.223 0 4.268-0.759 5.892-2.031-2.076-0.038-3.828-1.41-4.432-3.295 0.29 0.055 0.587 0.085 0.893 0.085 0.433 0 0.852-0.058 1.25-0.166-2.17-0.436-3.806-2.354-3.806-4.652 0-0.020 0-0.040 0-0.060 0.64 0.355 1.371 0.569 2.149 0.593-1.273-0.851-2.111-2.303-2.111-3.949 0-0.869 0.234-1.684 0.642-2.385 2.34 2.87 5.836 4.759 9.779 4.957-0.081-0.347-0.123-0.709-0.123-1.081 0-2.62 2.124-4.744 4.744-4.744 1.365 0 2.598 0.576 3.463 1.498 1.081-0.213 2.096-0.608 3.013-1.151-0.354 1.108-1.107 2.038-2.086 2.625 0.96-0.115 1.874-0.37 2.725-0.747-0.636 0.951-1.44 1.787-2.367 2.456z" />
-    </g>
+      <g id="forma-twitter">
+        <path d="M16 0c-8.837 0-16 7.163-16 16s7.163 16 16 16 16-7.163 16-16-7.163-16-16-16zM25.195 11.284c0.009 0.203 0.014 0.408 0.014 0.614 0 6.269-4.772 13.499-13.499 13.499-2.679 0-5.173-0.785-7.273-2.132 0.371 0.044 0.749 0.066 1.132 0.066 2.223 0 4.268-0.759 5.892-2.031-2.076-0.038-3.828-1.41-4.432-3.295 0.29 0.055 0.587 0.085 0.893 0.085 0.433 0 0.852-0.058 1.25-0.166-2.17-0.436-3.806-2.354-3.806-4.652 0-0.020 0-0.040 0-0.060 0.64 0.355 1.371 0.569 2.149 0.593-1.273-0.851-2.111-2.303-2.111-3.949 0-0.869 0.234-1.684 0.642-2.385 2.34 2.87 5.836 4.759 9.779 4.957-0.081-0.347-0.123-0.709-0.123-1.081 0-2.62 2.124-4.744 4.744-4.744 1.365 0 2.598 0.576 3.463 1.498 1.081-0.213 2.096-0.608 3.013-1.151-0.354 1.108-1.107 2.038-2.086 2.625 0.96-0.115 1.874-0.37 2.725-0.747-0.636 0.951-1.44 1.787-2.367 2.456z" />
+      </g>
 
-    <!-- IcoMoon - Free -->
-    <g id="forma-pinterest">
-      <path d="M16 0c-8.837 0-16 7.163-16 16s7.163 16 16 16c8.837 0 16-7.163 16-16s-7.163-16-16-16zM17.551 21.379c-1.454-0.113-2.064-0.833-3.203-1.525-0.627 3.287-1.393 6.438-3.661 8.084-0.7-4.968 1.028-8.699 1.83-12.66-1.368-2.303 0.165-6.939 3.051-5.796 3.551 1.405-3.075 8.563 1.373 9.457 4.644 0.933 6.54-8.058 3.661-10.982-4.161-4.222-12.112-0.096-11.135 5.949 0.238 1.478 1.765 1.926 0.61 3.966-2.663-0.59-3.458-2.691-3.356-5.491 0.165-4.584 4.118-7.793 8.084-8.236 5.015-0.561 9.722 1.841 10.372 6.559 0.732 5.325-2.264 11.092-7.627 10.677z" />
-    </g>
+      <g id="forma-pinterest">
+        <path d="M16 0c-8.837 0-16 7.163-16 16s7.163 16 16 16c8.837 0 16-7.163 16-16s-7.163-16-16-16zM17.551 21.379c-1.454-0.113-2.064-0.833-3.203-1.525-0.627 3.287-1.393 6.438-3.661 8.084-0.7-4.968 1.028-8.699 1.83-12.66-1.368-2.303 0.165-6.939 3.051-5.796 3.551 1.405-3.075 8.563 1.373 9.457 4.644 0.933 6.54-8.058 3.661-10.982-4.161-4.222-12.112-0.096-11.135 5.949 0.238 1.478 1.765 1.926 0.61 3.966-2.663-0.59-3.458-2.691-3.356-5.491 0.165-4.584 4.118-7.793 8.084-8.236 5.015-0.561 9.722 1.841 10.372 6.559 0.732 5.325-2.264 11.092-7.627 10.677z" />
+      </g>
 
-    <!-- IcoMoon - Free -->
-    <g id="forma-triste">
-      <path d="M16 0c-8.837 0-16 7.163-16 16s7.163 16 16 16 16-7.163 16-16-7.163-16-16-16zM22 8c1.105 0 2 0.895 2 2s-0.895 2-2 2-2-0.895-2-2 0.895-2 2-2zM10 8c1.105 0 2 0.895 2 2s-0.895 2-2 2-2-0.895-2-2 0.895-2 2-2zM22.003 24.398c-1.224-2.036-3.454-3.398-6.003-3.398s-4.779 1.362-6.003 3.398l-2.573-1.544c1.749-2.908 4.935-4.855 8.576-4.855s6.827 1.946 8.576 4.855l-2.573 1.544z" />
-    </g>
+      <g id="forma-triste">
+        <path d="M16 0c-8.837 0-16 7.163-16 16s7.163 16 16 16 16-7.163 16-16-7.163-16-16-16zM22 8c1.105 0 2 0.895 2 2s-0.895 2-2 2-2-0.895-2-2 0.895-2 2-2zM10 8c1.105 0 2 0.895 2 2s-0.895 2-2 2-2-0.895-2-2 0.895-2 2-2zM22.003 24.398c-1.224-2.036-3.454-3.398-6.003-3.398s-4.779 1.362-6.003 3.398l-2.573-1.544c1.749-2.908 4.935-4.855 8.576-4.855s6.827 1.946 8.576 4.855l-2.573 1.544z" />
+      </g>
 
-    <!-- IcoMoon - Free -->
-    <g id="forma-cubiertos">
-      <path d="M27 0c-2.762 0-5 2.239-5 5v15h4v12h6v-27c0-2.761-2.239-5-5-5zM13 0c-0.552 0-1 0.448-1 1v7c0 0.276-0.448 0.5-1 0.5s-1-0.224-1-0.5v-7c0-0.552-0.448-1-1-1s-1 0.448-1 1v7c0 0.276-0.448 0.5-1 0.5s-1-0.224-1-0.5v-7c0-0.552-0.448-1-1-1s-1 0.448-1 1v7c0 0.276-0.448 0.5-1 0.5s-1-0.224-1-0.5v-7c0-0.552-0.448-1-1-1s-1 0.448-1 1v9c0 0.885 0.783 1.378 1.656 2 1.1 0.783 2.344 1.77 2.344 4v16h6v-16c0-2.23 1.243-3.217 2.344-4 0.873-0.622 1.656-1.115 1.656-2v-9c0-0.552-0.448-1-1-1z" />
-    </g>
-  </defs>
-</svg>
+      <g id="forma-cubiertos">
+        <path d="M27 0c-2.762 0-5 2.239-5 5v15h4v12h6v-27c0-2.761-2.239-5-5-5zM13 0c-0.552 0-1 0.448-1 1v7c0 0.276-0.448 0.5-1 0.5s-1-0.224-1-0.5v-7c0-0.552-0.448-1-1-1s-1 0.448-1 1v7c0 0.276-0.448 0.5-1 0.5s-1-0.224-1-0.5v-7c0-0.552-0.448-1-1-1s-1 0.448-1 1v7c0 0.276-0.448 0.5-1 0.5s-1-0.224-1-0.5v-7c0-0.552-0.448-1-1-1s-1 0.448-1 1v9c0 0.885 0.783 1.378 1.656 2 1.1 0.783 2.344 1.77 2.344 4v16h6v-16c0-2.23 1.243-3.217 2.344-4 0.873-0.622 1.656-1.115 1.656-2v-9c0-0.552-0.448-1-1-1z" />
+      </g>
+    </defs>
+  </svg>
 
 
 
 
 
-<div class="seccion  seccion--destacada  seccion--fondo-diagonal  seccion--bordes">
-  <div class="seccion">
-    <h1 class="mega">Tipografía</h1>
-  </div>
-</div>
-
-<div class="seccion">
-  <div class="contenedor  contenedor--relleno">
-    <h1 class="giga">Giga</h1>
-    <h1 class="mega">Mega</h1>
-    <h1 class="kilo">Kilo</h1>
-    <h1 class="kilo"><svg class="forma  forma--chocolate" viewBox="0 0 32 32"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#forma-chocolate"></use></svg> Kilo + .forma</h1>
-    <h1>Encabezado 1</h1>
-    <h2>Encabezado 2</h2>
-    <h3>Encabezado 3</h3>
-    <h4>Encabezado 4</h4>
-    <h5>Encabezado 5</h5>
-    <h6>Encabezado 6</h6>
-
-
-
-
-
-    <h1 class="titulo-seccion">Párrafo</h1>
-    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus.</p>
-    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus.</p>
-
-
-
-
-
-    <h1 class="titulo-seccion">Enlace, negrita y cursiva</h1>
-    <p>Pellentesque habitant morbi <a href="#" title="tristique senectus">tristique senectus</a> et netus et malesuada fames ac turpis egestas.</p>
-    <p>Lorem ipsum dolor sit amet, <strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque gravida.</strong> Lorem ipsum dolor sit amet.</p>
-    <p>Lorem ipsum dolor sit amet, <em>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque gravida.</em> Lorem ipsum dolor sit amet.</p>
-
-
-
-
-
-    <h1 class="titulo-seccion">Lista desordenada</h1>
-    <ul>
-      <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
-      <li>Morbi in sem quis dui placerat ornare. Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu. Cras consequat.</li>
-        <ul>
-          <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
-          <li>Aliquam tincidunt mauris eu risus.</li>
-          <li>Vestibulum auctor dapibus neque.</li>
-        </ul>
-      </li>
-      <li>Vestibulum auctor dapibus neque.</li>
-    </ul>
-
-
-
-
-
-    <h1 class="titulo-seccion">Lista pizcas</h1>
-    <ul class="lista  lista--puntos">
-      <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
-      <li>Morbi in sem quis dui placerat ornare. Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu. Cras consequat.</li>
-        <ul class="lista  lista--puntos  lista--puntos-color-secundario">
-          <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
-          <li>Aliquam tincidunt mauris eu risus.</li>
-          <li>Vestibulum auctor dapibus neque.</li>
-        </ul>
-      </li>
-      <li>Vestibulum auctor dapibus neque.</li>
-    </ul>
-
-
-
-
-
-    <h1 class="titulo-seccion">Lista ordenada</h1>
-    <ol>
-      <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
-      <li>Morbi in sem quis dui placerat ornare. Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu. Cras consequat.</li>
-        <ol>
-          <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
-          <li>Aliquam tincidunt mauris eu risus.</li>
-          <li>Vestibulum auctor dapibus neque.</li>
-        </ol>
-      </li>
-      <li>Vestibulum auctor dapibus neque.</li>
-    </ol>
-
-
-
-
-
-    <h1 class="titulo-seccion">Cita</h1>
-    <blockquote>
-      <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante.</p>
-      <footer>Por <cite title="a pizcas y a mizcas">a pizcas y a mizcas</cite>.</footer>
-    </blockquote>
-  </div>
-</div>
-
-
-
-
-
-
-
-
-
-
-<div class="seccion  seccion--destacada  seccion--fondo-diagonal  seccion--bordes">
-  <div class="seccion">
-    <h1 class="mega">Botones</h1>
-  </div>
-</div>
-
-<div class="seccion">
-  <div class="contenedor  contenedor--relleno">
-    <p>Tamaño pequeño</p>
-    <a href="#" class="boton  boton--s">
-      Botón <svg class="forma  forma--flecha-derecha" viewBox="0 0 32 32"><use xlink:href="#forma-flecha-derecha"></use></svg>
-    </a>
-    <a href="#" class="boton  boton--principal  boton--s">
-      Botón <svg class="forma  forma--flecha-derecha" viewBox="0 0 32 32"><use xlink:href="#forma-flecha-derecha"></use></svg>
-    </a>
-    <a href="#" class="boton  boton--secundario  boton--s">
-      Botón <svg class="forma  forma--flecha-derecha" viewBox="0 0 32 32"><use xlink:href="#forma-flecha-derecha"></use></svg>
-    </a>
-    <a href="#" class="boton  boton--transparente  boton--s">
-      Botón <svg class="forma  forma--flecha-derecha" viewBox="0 0 32 32"><use xlink:href="#forma-flecha-derecha"></use></svg>
-    </a>
-
-
-
-
-
-    <p>Tamaño por defecto</p>
-    <a href="#" class="boton">
-      Botón <svg class="forma  forma--flecha-derecha" viewBox="0 0 32 32"><use xlink:href="#forma-flecha-derecha"></use></svg>
-    </a>
-    <a href="#" class="boton  boton--principal">
-      Botón <svg class="forma  forma--flecha-derecha" viewBox="0 0 32 32"><use xlink:href="#forma-flecha-derecha"></use></svg>
-    </a>
-    <a href="#" class="boton  boton--secundario">
-      Botón <svg class="forma  forma--flecha-derecha" viewBox="0 0 32 32"><use xlink:href="#forma-flecha-derecha"></use></svg>
-    </a>
-    <a href="#" class="boton  boton--transparente">
-      Botón <svg class="forma  forma--flecha-derecha" viewBox="0 0 32 32"><use xlink:href="#forma-flecha-derecha"></use></svg>
-    </a>
-
-
-
-
-
-    <p>Tamaño grande</p>
-    <a href="#" class="boton  boton--l">
-      Botón <svg class="forma  forma--triste" viewBox="0 0 32 32"><use xlink:href="#forma-triste"></use></svg>
-    </a>
-    <a href="#" class="boton  boton--principal  boton--l">
-      Botón <svg class="forma  forma--triste" viewBox="0 0 32 32"><use xlink:href="#forma-triste"></use></svg>
-    </a>
-    <a href="#" class="boton  boton--secundario  boton--l">
-      Botón <svg class="forma  forma--triste" viewBox="0 0 32 32"><use xlink:href="#forma-triste"></use></svg>
-    </a>
-    <a href="#" class="boton  boton--transparente  boton--l">
-      Botón <svg class="forma  forma--triste" viewBox="0 0 32 32"><use xlink:href="#forma-triste"></use></svg>
-    </a>
-    <br /><br />
-
-
-
-
-
-    <p>Elementos</p>
-    <a class="boton" href="#" role="button">
-      Enlace <svg class="forma  forma--flecha-derecha" viewBox="0 0 32 32"><use xlink:href="#forma-flecha-derecha"></use></svg>
-    </a>
-    <button class="boton  boton--principal" type="submit">
-      Botón <svg class="forma  forma--flecha-derecha" viewBox="0 0 32 32"><use xlink:href="#forma-flecha-derecha"></use></svg>
-    </button>
-    <input class="boton  boton--secundario" type="button" value="Input botón">
-    <input class="boton  boton--transparente" type="submit" value="Input Submit">
-
-
-
-
-
-    <p>Redes sociales</p>
-    <a href="#" class="boton  boton--s  boton--twitter">Twitter</a>
-    <a href="#" class="boton  boton--s  boton--facebook">Facebook</a>
-    <a href="#" class="boton  boton--s  boton--google">Google+</a>
-    <a href="#" class="boton  boton--s  boton--pinterest">Pinterest</a>
-  </div>
-</div>
-
-
-
-
-
-
-
-
-
-
-<div class="seccion  seccion--destacada  seccion--fondo-diagonal  seccion--bordes">
-  <div class="seccion">
-    <h1 class="mega">Grid</h1>
-  </div>
-</div>
-
-<div class="seccion">
-  <div class="grid">
-    <div class="contenedor">
-      <div class="contenedor__lectura">
-        <div class="color--demo">
-          <p>Lectura</p>
-        </div>
-      </div>
-      <div class="contenedor__barra-lateral">
-        <div class="color--demo">
-          <p>Barra lateral</p>
-        </div>
-      </div>
+  <div class="seccion  seccion--destacada  seccion--fondo-diagonal  seccion--bordes">
+    <div class="seccion">
+      <h1 class="mega">Tipografía</h1>
     </div>
+  </div>
 
-    <div class="contenedor">
-      <div class="contenedor__widget">
-        <div class="color--demo">
-          <p>Widget</p>
+  <div class="seccion">
+    <div class="contenedor  contenedor--relleno">
+      <h1 class="giga">Giga</h1>
+      <h1 class="mega">Mega</h1>
+      <h1 class="kilo">Kilo</h1>
+      <h1 class="kilo"><svg class="forma  forma--chocolate" viewBox="0 0 32 32"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#forma-chocolate"></use></svg> Kilo + .forma</h1>
+      <h1>Encabezado 1</h1>
+      <h2>Encabezado 2</h2>
+      <h3>Encabezado 3</h3>
+      <h4>Encabezado 4</h4>
+      <h5>Encabezado 5</h5>
+      <h6>Encabezado 6</h6>
+
+
+
+
+
+      <h1 class="titulo-seccion">Párrafo</h1>
+      <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus.</p>
+      <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus.</p>
+
+
+
+
+
+      <h1 class="titulo-seccion">Enlace, negrita y cursiva</h1>
+      <p>Pellentesque habitant morbi <a href="#" title="tristique senectus">tristique senectus</a> et netus et malesuada fames ac turpis egestas.</p>
+      <p>Lorem ipsum dolor sit amet, <strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque gravida.</strong> Lorem ipsum dolor sit amet.</p>
+      <p>Lorem ipsum dolor sit amet, <em>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque gravida.</em> Lorem ipsum dolor sit amet.</p>
+
+
+
+
+
+      <h1 class="titulo-seccion">Lista desordenada</h1>
+      <ul>
+        <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+        <li>Morbi in sem quis dui placerat ornare. Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu. Cras consequat.</li>
+          <ul>
+            <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+            <li>Aliquam tincidunt mauris eu risus.</li>
+            <li>Vestibulum auctor dapibus neque.</li>
+          </ul>
+        </li>
+        <li>Vestibulum auctor dapibus neque.</li>
+      </ul>
+
+
+
+
+
+      <h1 class="titulo-seccion">Lista pizcas</h1>
+      <ul class="lista  lista--puntos">
+        <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+        <li>Morbi in sem quis dui placerat ornare. Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu. Cras consequat.</li>
+          <ul class="lista  lista--puntos  lista--puntos-color-secundario">
+            <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+            <li>Aliquam tincidunt mauris eu risus.</li>
+            <li>Vestibulum auctor dapibus neque.</li>
+          </ul>
+        </li>
+        <li>Vestibulum auctor dapibus neque.</li>
+      </ul>
+
+
+
+
+
+      <h1 class="titulo-seccion">Lista ordenada</h1>
+      <ol>
+        <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+        <li>Morbi in sem quis dui placerat ornare. Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu. Cras consequat.</li>
+          <ol>
+            <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+            <li>Aliquam tincidunt mauris eu risus.</li>
+            <li>Vestibulum auctor dapibus neque.</li>
+          </ol>
+        </li>
+        <li>Vestibulum auctor dapibus neque.</li>
+      </ol>
+
+
+
+
+
+      <h1 class="titulo-seccion">Cita</h1>
+      <blockquote>
+        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante.</p>
+        <footer>Por <cite title="a pizcas y a mizcas">a pizcas y a mizcas</cite>.</footer>
+      </blockquote>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+  <div class="seccion  seccion--destacada  seccion--fondo-diagonal  seccion--bordes">
+    <div class="seccion">
+      <h1 class="mega">Botones</h1>
+    </div>
+  </div>
+
+  <div class="seccion">
+    <div class="contenedor  contenedor--relleno">
+      <p>Tamaño pequeño</p>
+      <a href="#" class="boton  boton--s">
+        Botón <svg class="forma  forma--flecha-derecha" viewBox="0 0 32 32"><use xlink:href="#forma-flecha-derecha"></use></svg>
+      </a>
+      <a href="#" class="boton  boton--principal  boton--s">
+        Botón <svg class="forma  forma--flecha-derecha" viewBox="0 0 32 32"><use xlink:href="#forma-flecha-derecha"></use></svg>
+      </a>
+      <a href="#" class="boton  boton--secundario  boton--s">
+        Botón <svg class="forma  forma--flecha-derecha" viewBox="0 0 32 32"><use xlink:href="#forma-flecha-derecha"></use></svg>
+      </a>
+      <a href="#" class="boton  boton--transparente  boton--s">
+        Botón <svg class="forma  forma--flecha-derecha" viewBox="0 0 32 32"><use xlink:href="#forma-flecha-derecha"></use></svg>
+      </a>
+
+
+
+
+
+      <p>Tamaño por defecto</p>
+      <a href="#" class="boton">
+        Botón <svg class="forma  forma--flecha-derecha" viewBox="0 0 32 32"><use xlink:href="#forma-flecha-derecha"></use></svg>
+      </a>
+      <a href="#" class="boton  boton--principal">
+        Botón <svg class="forma  forma--flecha-derecha" viewBox="0 0 32 32"><use xlink:href="#forma-flecha-derecha"></use></svg>
+      </a>
+      <a href="#" class="boton  boton--secundario">
+        Botón <svg class="forma  forma--flecha-derecha" viewBox="0 0 32 32"><use xlink:href="#forma-flecha-derecha"></use></svg>
+      </a>
+      <a href="#" class="boton  boton--transparente">
+        Botón <svg class="forma  forma--flecha-derecha" viewBox="0 0 32 32"><use xlink:href="#forma-flecha-derecha"></use></svg>
+      </a>
+
+
+
+
+
+      <p>Tamaño grande</p>
+      <a href="#" class="boton  boton--l">
+        Botón <svg class="forma  forma--triste" viewBox="0 0 32 32"><use xlink:href="#forma-triste"></use></svg>
+      </a>
+      <a href="#" class="boton  boton--principal  boton--l">
+        Botón <svg class="forma  forma--triste" viewBox="0 0 32 32"><use xlink:href="#forma-triste"></use></svg>
+      </a>
+      <a href="#" class="boton  boton--secundario  boton--l">
+        Botón <svg class="forma  forma--triste" viewBox="0 0 32 32"><use xlink:href="#forma-triste"></use></svg>
+      </a>
+      <a href="#" class="boton  boton--transparente  boton--l">
+        Botón <svg class="forma  forma--triste" viewBox="0 0 32 32"><use xlink:href="#forma-triste"></use></svg>
+      </a>
+      <br /><br />
+
+
+
+
+
+      <p>Elementos</p>
+      <a class="boton" href="#" role="button">
+        Enlace <svg class="forma  forma--flecha-derecha" viewBox="0 0 32 32"><use xlink:href="#forma-flecha-derecha"></use></svg>
+      </a>
+      <button class="boton  boton--principal" type="submit">
+        Botón <svg class="forma  forma--flecha-derecha" viewBox="0 0 32 32"><use xlink:href="#forma-flecha-derecha"></use></svg>
+      </button>
+      <input class="boton  boton--secundario" type="button" value="Input botón">
+      <input class="boton  boton--transparente" type="submit" value="Input Submit">
+
+
+
+
+
+      <p>Redes sociales</p>
+      <a href="#" class="boton  boton--s  boton--twitter">Twitter</a>
+      <a href="#" class="boton  boton--s  boton--facebook">Facebook</a>
+      <a href="#" class="boton  boton--s  boton--google">Google+</a>
+      <a href="#" class="boton  boton--s  boton--pinterest">Pinterest</a>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+  <div class="seccion  seccion--destacada  seccion--fondo-diagonal  seccion--bordes">
+    <div class="seccion">
+      <h1 class="mega">Grid</h1>
+    </div>
+  </div>
+
+  <div class="seccion">
+    <div class="grid">
+      <div class="contenedor">
+        <div class="contenedor__lectura">
+          <div class="color--demo">
+            <p>Lectura</p>
+          </div>
+        </div>
+        <div class="contenedor__barra-lateral">
+          <div class="color--demo">
+            <p>Barra lateral</p>
+          </div>
         </div>
       </div>
-      <div class="contenedor__widget">
-        <div class="color--demo">
-          <p>Widget</p>
+
+      <div class="contenedor">
+        <div class="contenedor__widget">
+          <div class="color--demo">
+            <p>Widget</p>
+          </div>
         </div>
-      </div>
-      <div class="contenedor__widget">
-        <div class="color--demo">
-          <p>Widget</p>
+        <div class="contenedor__widget">
+          <div class="color--demo">
+            <p>Widget</p>
+          </div>
         </div>
-      </div>
-      <div class="contenedor__widget">
-        <div class="color--demo">
-          <p>Widget</p>
+        <div class="contenedor__widget">
+          <div class="color--demo">
+            <p>Widget</p>
+          </div>
+        </div>
+        <div class="contenedor__widget">
+          <div class="color--demo">
+            <p>Widget</p>
+          </div>
         </div>
       </div>
     </div>
   </div>
-</div>
 
 
 
@@ -339,372 +329,441 @@
 
 
 
-<div class="seccion  seccion--destacada  seccion--fondo-diagonal  seccion--bordes">
-  <div class="seccion">
-    <h1 class="mega">Artículo</h1>
+  <div class="seccion  seccion--destacada  seccion--fondo-diagonal  seccion--bordes">
+    <div class="seccion">
+      <h1 class="mega">Artículo</h1>
+    </div>
   </div>
-</div>
 
-<div class="seccion">
-  <div class="contenedor  contenedor--relleno">
-    <article class="articulo">
-      <h1>Limonada de fresa</h1>
-
-
-      <p class="articulo__metadatos">
-        Publicado el <time datetime="2014-04-28"> 28 de abril de 2014</time>
-        por <svg class="forma  forma--gorro-chef" viewBox="0 0 32 32"><use xlink:href="#forma-gorro-chef"></use></svg> pizcas
-        en <a href="#">Recetas de la abuela</a>
-      </p>
+  <div class="seccion">
+    <div class="contenedor  contenedor--relleno">
+      <article class="articulo">
+        <h1>Limonada de fresa</h1>
 
 
-      <p>Ahora que ya hemos entrado en el horario de verano, aunque el tiempo parece que no nos acompaña… a nosotros nos apetece sentir el calor, veranito… Así que leyendo hace unos días el <a title="Papá Moscas" href="http://papa-moscas.com/blog" target="_blank">blog de Papá – Moscas</a> (que si no los conocéis os recomendamos que echeís un vistazillo: los babos son geniales y las papastillas cargadas de ingenio) donde proponían una receta sencilla de <a title="Limonada de fresa freshquita" href="http://papa-moscas.com/limonada-de-fresa-freshquita.html" target="_blank">limonada de fresa freshquita</a>&nbsp; a nosotros nos dio un poquito de envidia (de la buena ) y nos animamos a preparar nuestra limonada de fresa.</p>
-      <p>Y tenían mucha razón… una receta que se hace en un pis-pas y nos traslada al veranito.</p>
+        <p class="articulo__metadatos">
+          Publicado el <time datetime="2014-04-28"> 28 de abril de 2014</time>
+          por <svg class="forma  forma--gorro-chef" viewBox="0 0 32 32"><use xlink:href="#forma-gorro-chef"></use></svg> pizcas
+          en <a href="#">Recetas de la abuela</a>
+        </p>
 
 
-      <h2>Preparación limonada de fresa</h2>
-      <p>Limpiamos y quitamos la parte verde de las fresas y las trituramos, a continuación añadimos el azúcar. Si queréis que quede más fino, os recomendamos que lo paséis por el colador o por el chino.</p>
+        <p>Ahora que ya hemos entrado en el horario de verano, aunque el tiempo parece que no nos acompaña… a nosotros nos apetece sentir el calor, veranito… Así que leyendo hace unos días el <a title="Papá Moscas" href="http://papa-moscas.com/blog" target="_blank">blog de Papá – Moscas</a> (que si no los conocéis os recomendamos que echeís un vistazillo: los babos son geniales y las papastillas cargadas de ingenio) donde proponían una receta sencilla de <a title="Limonada de fresa freshquita" href="http://papa-moscas.com/limonada-de-fresa-freshquita.html" target="_blank">limonada de fresa freshquita</a>&nbsp; a nosotros nos dio un poquito de envidia (de la buena ) y nos animamos a preparar nuestra limonada de fresa.</p>
+        <p>Y tenían mucha razón… una receta que se hace en un pis-pas y nos traslada al veranito.</p>
+
+
+        <h2>Preparación limonada de fresa</h2>
+        <p>Limpiamos y quitamos la parte verde de las fresas y las trituramos, a continuación añadimos el azúcar. Si queréis que quede más fino, os recomendamos que lo paséis por el colador o por el chino.</p>
+        <figure>
+          <img src="http://apizcasyamizcas.es/wp-content/uploads/DSC_0043-pizcas.jpg" alt="">
+          <figcaption><i>Flanes de espárragos y queso</i></figcaption>
+        </figure>
+        <p>Exprimimos los limones y la lima y lo colamos para que no caiga ningún huesecillo y lo añadimos a las fresas. Por último añadimos el agua fresquita y ya tenemos lista la limonada de fresa.</p>
+        <p>Ideal para una tarde primaveral, para una fiesta infantil o para un sábado noche con un chorrito de ron. Nosotros ya estamos pensando hacer esta limonada de fresa en granizado. O también se nos ha ocurrido sustituir el zumo de limón por zumo de naranja…. ya os contaremos. Ya véis hay opciones para todos.</p>
+
+
+        <p class="articulo__etiquetas">
+          Etiquetas:
+          <a href="http://apizcasyamizcas.es/tag/fresa/" rel="tag"><svg class="forma  forma--chocolate" viewBox="0 0 32 32"><use xlink:href="#forma-chocolate"></use></svg> fresa</a>,
+          <a href="http://apizcasyamizcas.es/tag/limonada/" rel="tag"><svg class="forma  forma--chocolate" viewBox="0 0 32 32"><use xlink:href="#forma-chocolate"></use></svg> limonada</a>,
+          <a href="http://apizcasyamizcas.es/tag/primavera/" rel="tag"><svg class="forma  forma--chocolate" viewBox="0 0 32 32"><use xlink:href="#forma-chocolate"></use></svg> primavera</a>,
+          <a href="http://apizcasyamizcas.es/tag/refresco/" rel="tag"><svg class="forma  forma--chocolate" viewBox="0 0 32 32"><use xlink:href="#forma-chocolate"></use></svg> refresco</a>,
+          <a href="http://apizcasyamizcas.es/tag/natural/" rel="tag"><svg class="forma  forma--chocolate" viewBox="0 0 32 32"><use xlink:href="#forma-chocolate"></use></svg> natural </a>
+        </p>
+
+        <p class="articulo__compartir">
+
+          <!-- Mas información: http://cferdinandi.github.io/social-sharing/ -->
+          Compartir:
+          <a href="https://twitter.com/intent/tweet?text=YOUR-TITLE&url=YOUR-URL&via=TWITTER-HANDLE" class="boton  boton--s  boton--twitter">Twitter</a>
+          <a href="https://www.facebook.com/sharer/sharer.php?u=YOUR-URL" class="boton  boton--s  boton--facebook">Facebook</a>
+          <a href="https://plus.google.com/share?url=YOUR-URL" class="boton  boton--s  boton--google">Google+</a>
+          <a href="https://pinterest.com/pin/create/button/?url=YOUR-URL&description=YOUR-DESCRIPTION&media=YOUR-IMAGE-SRC" class="boton  boton--s  boton--pinterest">Pinterest</a>
+        </p>
+      </article>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+  <div class="seccion  seccion--destacada  seccion--fondo-diagonal  seccion--bordes">
+    <div class="seccion">
+      <h1 class="mega">Colores</h1>
+    </div>
+  </div>
+
+  <div class="seccion">
+    <div class="contenedor  contenedor--relleno">
+      <p><code>#444444</code> Color texto</p>
+      <div class="color  color--texto"></div>
+
+      <p><code>#CCCCCC</code> Color base</p>
+      <div class="color  color--base"></div>
+
+      <p><code>#d9d9d9</code> Color base claro</p>
+      <div class="color  color--base-claro"></div>
+
+      <p><code>#f299b7</code> Color principal</p>
+      <div class="color  color--principal"></div>
+
+      <p><code>#f5b0c7</code> Color principal claro</p>
+      <div class="color  color--principal-claro"></div>
+
+      <p><code>#392814</code> Color secundario</p>
+      <div class="color  color--secundario"></div>
+
+      <p><code>#4c351b</code> Color secundario claro</p>
+      <div class="color  color--secundario-claro"></div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+  <div class="seccion  seccion--destacada  seccion--fondo-diagonal  seccion--bordes">
+    <div class="seccion">
+      <h1 class="mega">Menú principal</h1>
+    </div>
+  </div>
+
+  <div class="seccion">
+    <div class="contenedor  contenedor--relleno">
+
+      <div class="cinta">
+          <div class="cinta__contenido">
+
+            <nav>
+              <ul class="menu">
+                <li class="menu__elemento"><a href="#">Inicio</a></li>
+                <li class="menu__elemento"><a href="#">Comida</a></li>
+                <li class="menu__elemento"><a href="#">Nuestras cosas dulces</a></li>
+                <li class="menu__elemento"><a href="#">Restaurantes</a></li>
+                <li class="menu__elemento"><a href="#">Celebraciones pizcas</a></li>
+                <li class="menu__elemento"><a href="#">Contacto</a></li>
+              </ul>
+            </nav>
+
+          </div>
+      </div>
+
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+  <div class="seccion  seccion--destacada  seccion--fondo-diagonal  seccion--bordes">
+    <div class="seccion">
+      <h1 class="mega">Figure</h1>
+    </div>
+  </div>
+
+  <div class="seccion">
+    <div class="contenedor  contenedor--relleno">
       <figure>
         <img src="http://apizcasyamizcas.es/wp-content/uploads/DSC_0043-pizcas.jpg" alt="">
         <figcaption><i>Flanes de espárragos y queso</i></figcaption>
       </figure>
-      <p>Exprimimos los limones y la lima y lo colamos para que no caiga ningún huesecillo y lo añadimos a las fresas. Por último añadimos el agua fresquita y ya tenemos lista la limonada de fresa.</p>
-      <p>Ideal para una tarde primaveral, para una fiesta infantil o para un sábado noche con un chorrito de ron. Nosotros ya estamos pensando hacer esta limonada de fresa en granizado. O también se nos ha ocurrido sustituir el zumo de limón por zumo de naranja…. ya os contaremos. Ya véis hay opciones para todos.</p>
-
-
-      <p class="articulo__etiquetas">
-        Etiquetas:
-        <a href="http://apizcasyamizcas.es/tag/fresa/" rel="tag"><svg class="forma  forma--chocolate" viewBox="0 0 32 32"><use xlink:href="#forma-chocolate"></use></svg> fresa</a>,
-        <a href="http://apizcasyamizcas.es/tag/limonada/" rel="tag"><svg class="forma  forma--chocolate" viewBox="0 0 32 32"><use xlink:href="#forma-chocolate"></use></svg> limonada</a>,
-        <a href="http://apizcasyamizcas.es/tag/primavera/" rel="tag"><svg class="forma  forma--chocolate" viewBox="0 0 32 32"><use xlink:href="#forma-chocolate"></use></svg> primavera</a>,
-        <a href="http://apizcasyamizcas.es/tag/refresco/" rel="tag"><svg class="forma  forma--chocolate" viewBox="0 0 32 32"><use xlink:href="#forma-chocolate"></use></svg> refresco</a>,
-        <a href="http://apizcasyamizcas.es/tag/natural/" rel="tag"><svg class="forma  forma--chocolate" viewBox="0 0 32 32"><use xlink:href="#forma-chocolate"></use></svg> natural </a>
-      </p>
-
-      <p class="articulo__compartir">
-
-        <!-- Mas información: http://cferdinandi.github.io/social-sharing/ -->
-        Compartir:
-        <a href="https://twitter.com/intent/tweet?text=YOUR-TITLE&url=YOUR-URL&via=TWITTER-HANDLE" class="boton  boton--s  boton--twitter">Twitter</a>
-        <a href="https://www.facebook.com/sharer/sharer.php?u=YOUR-URL" class="boton  boton--s  boton--facebook">Facebook</a>
-        <a href="https://plus.google.com/share?url=YOUR-URL" class="boton  boton--s  boton--google">Google+</a>
-        <a href="https://pinterest.com/pin/create/button/?url=YOUR-URL&description=YOUR-DESCRIPTION&media=YOUR-IMAGE-SRC" class="boton  boton--s  boton--pinterest">Pinterest</a>
-      </p>
-    </article>
-  </div>
-</div>
-
-
-
-
-
-
-
-
-
-
-<div class="seccion  seccion--destacada  seccion--fondo-diagonal  seccion--bordes">
-  <div class="seccion">
-    <h1 class="mega">Colores</h1>
-  </div>
-</div>
-
-<div class="seccion">
-  <div class="contenedor  contenedor--relleno">
-    <p><code>#444444</code> Color texto</p>
-    <div class="color  color--texto"></div>
-
-    <p><code>#CCCCCC</code> Color base</p>
-    <div class="color  color--base"></div>
-
-    <p><code>#d9d9d9</code> Color base claro</p>
-    <div class="color  color--base-claro"></div>
-
-    <p><code>#f299b7</code> Color principal</p>
-    <div class="color  color--principal"></div>
-
-    <p><code>#f5b0c7</code> Color principal claro</p>
-    <div class="color  color--principal-claro"></div>
-
-    <p><code>#392814</code> Color secundario</p>
-    <div class="color  color--secundario"></div>
-
-    <p><code>#4c351b</code> Color secundario claro</p>
-    <div class="color  color--secundario-claro"></div>
-  </div>
-</div>
-
-
-
-
-
-
-
-
-
-
-<div class="seccion  seccion--destacada  seccion--fondo-diagonal  seccion--bordes">
-  <div class="seccion">
-    <h1 class="mega">Menú principal</h1>
-  </div>
-</div>
-
-<div class="seccion">
-  <div class="contenedor  contenedor--relleno">
-
-    <div class="cinta">
-        <div class="cinta__contenido">
-
-          <nav>
-            <ul class="menu">
-              <li class="menu__elemento"><a href="#">Inicio</a></li>
-              <li class="menu__elemento"><a href="#">Comida</a></li>
-              <li class="menu__elemento"><a href="#">Nuestras cosas dulces</a></li>
-              <li class="menu__elemento"><a href="#">Restaurantes</a></li>
-              <li class="menu__elemento"><a href="#">Celebraciones pizcas</a></li>
-              <li class="menu__elemento"><a href="#">Contacto</a></li>
-            </ul>
-          </nav>
-
-        </div>
-    </div>
-
-  </div>
-</div>
-
-
-
-
-
-
-<div class="seccion  seccion--destacada  seccion--fondo-diagonal  seccion--bordes">
-  <div class="seccion">
-    <h1 class="mega">Figure</h1>
-  </div>
-</div>
-
-<div class="seccion">
-  <div class="contenedor  contenedor--relleno">
-    <figure>
-      <img src="http://apizcasyamizcas.es/wp-content/uploads/DSC_0043-pizcas.jpg" alt="">
-      <figcaption><i>Flanes de espárragos y queso</i></figcaption>
-    </figure>
-  </div>
-</div>
-
-
-
-
-
-<div class="seccion  seccion--destacada  seccion--fondo-diagonal  seccion--bordes">
-  <div class="seccion">
-    <h1 class="mega">Secciones destacadas</h1>
-  </div>
-</div>
-
-<br />
-
-<div class="seccion  seccion--destacada  seccion--washi-tape-estrellas">
-  <div class="seccion--washi-tape-estrellas__apertura"></div>
-
-  <div class="seccion">
-    <div class="grid">
-      <div class="contenedor contenedor--relleno">
-        <h1 class="kilo">Sección destacada</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce quis nulla neque. Proin porta sollicitudin commodo. Integer et nibh sagittis augue tempus lacinia. Ut nec nisl magna. Morbi eu sapien metus. Curabitur malesuada, dolor fringilla accumsan imperdiet, urna augue feugiat orci, vel consequat orci nisi in elit.</p>
-      </div>
     </div>
   </div>
 
-  <div class="seccion--washi-tape-estrellas__cierre"></div>
-</div>
 
-<br />
-<br />
 
-<div class="seccion  seccion--destacada  seccion--washi-tape-ajedrez">
-  <div class="seccion--washi-tape-ajedrez__apertura"></div>
 
-  <div class="seccion">
-    <div class="grid">
-      <div class="contenedor contenedor--relleno">
-        <h1 class="kilo">
-          <svg class="forma  forma--chocolate" viewBox="0 0 32 32"><use xlink:href="#forma-chocolate"></use></svg>
-          Sección destacada
-        </h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce quis nulla neque. Proin porta sollicitudin commodo. Integer et nibh sagittis augue tempus lacinia. Ut nec nisl magna. Morbi eu sapien metus. Curabitur malesuada, dolor fringilla accumsan imperdiet, urna augue feugiat orci, vel consequat orci nisi in elit.</p>
-      </div>
+
+
+
+
+
+
+  <div class="seccion  seccion--destacada  seccion--fondo-diagonal  seccion--bordes">
+    <div class="seccion">
+      <h1 class="mega">Secciones destacadas</h1>
     </div>
   </div>
 
-  <div class="seccion--washi-tape-ajedrez__cierre"></div>
-</div>
+  <br />
+  <br />
 
 
-<br />
-<br />
 
 
-<div class="seccion  seccion--destacada  seccion--bordes seccion--fondo-diagonal">
 
-  <div class="seccion">
-    <div class="grid">
-      <div class="contenedor  contenedor--relleno">
-        <h1 class="kilo">Sección destacada</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce quis nulla neque. Proin porta sollicitudin commodo. Integer et nibh sagittis augue tempus lacinia. Ut nec nisl magna. Morbi eu sapien metus. Curabitur malesuada, dolor fringilla accumsan imperdiet, urna augue feugiat orci, vel consequat orci nisi in elit.</p>
-      </div>
-    </div>
-  </div>
+  <div class="seccion  seccion--destacada  seccion--washi-tape-estrellas">
+    <div class="seccion--washi-tape-estrellas__apertura"></div>
 
-</div>
-
-
-<br />
-<br />
-
-
-<div class="seccion  seccion--destacada  seccion--banderines">
-
-  <div class="seccion">
-    <div class="grid">
-      <div class="contenedor  contenedor--relleno">
-        <h1 class="kilo">Sección destacada</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce quis nulla neque. Proin porta sollicitudin commodo. Integer et nibh sagittis augue tempus lacinia. Ut nec nisl magna. Morbi eu sapien metus. Curabitur malesuada, dolor fringilla accumsan imperdiet, urna augue feugiat orci, vel consequat orci nisi in elit.</p>
-      </div>
-    </div>
-  </div>
-
-</div>
-
-
-<br />
-<br />
-
-
-<div class="seccion">
-  <div class="grid">
-    <div class="contenedor  contenedor--relleno">
-
-      <div class="seccion  seccion--destacada  seccion--restaurantes">
-
-        <div class="seccion--restaurantes__apertura">
-          <small>&nbsp;= EST. 2012 =&nbsp;</small>
-        </div>
-
-        <div class="seccion--restaurantes__contenido">
-          <h1 class="kilo">
-            <svg class="forma" viewBox="0 0 32 32"><use xlink:href="#forma-cubiertos"></use></svg>
-            restaurantes
-            <svg class="forma" viewBox="0 0 32 32"><use xlink:href="#forma-cubiertos"></use></svg>
-          </h1>
-        </div>
-
-        <div class="seccion--restaurantes__cierre">
+    <div class="seccion">
+      <div class="grid">
+        <div class="contenedor contenedor--relleno">
+          <h1 class="kilo">Sección destacada</h1>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce quis nulla neque. Proin porta sollicitudin commodo. Integer et nibh sagittis augue tempus lacinia. Ut nec nisl magna. Morbi eu sapien metus. Curabitur malesuada, dolor fringilla accumsan imperdiet, urna augue feugiat orci, vel consequat orci nisi in elit.</p>
         </div>
       </div>
     </div>
+
+    <div class="seccion--washi-tape-estrellas__cierre"></div>
   </div>
-</div>
 
-<br />
-<br />
+  <br />
+  <br />
 
 
-<div class="seccion  seccion--destacada  seccion--fondo-diagonal  seccion--bordes">
+
+
+
+  <div class="seccion  seccion--destacada  seccion--washi-tape-ajedrez">
+    <div class="seccion--washi-tape-ajedrez__apertura"></div>
+
+    <div class="seccion">
+      <div class="grid">
+        <div class="contenedor contenedor--relleno">
+          <h1 class="kilo">
+            <svg class="forma  forma--chocolate" viewBox="0 0 32 32"><use xlink:href="#forma-chocolate"></use></svg>
+            Sección destacada
+          </h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce quis nulla neque. Proin porta sollicitudin commodo. Integer et nibh sagittis augue tempus lacinia. Ut nec nisl magna. Morbi eu sapien metus. Curabitur malesuada, dolor fringilla accumsan imperdiet, urna augue feugiat orci, vel consequat orci nisi in elit.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="seccion--washi-tape-ajedrez__cierre"></div>
+  </div>
+
+  <br />
+  <br />
+
+
+
+
+
+  <div class="seccion  seccion--destacada  seccion--bordes seccion--fondo-diagonal">
+
+    <div class="seccion">
+      <div class="grid">
+        <div class="contenedor  contenedor--relleno">
+          <h1 class="kilo">Sección destacada</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce quis nulla neque. Proin porta sollicitudin commodo. Integer et nibh sagittis augue tempus lacinia. Ut nec nisl magna. Morbi eu sapien metus. Curabitur malesuada, dolor fringilla accumsan imperdiet, urna augue feugiat orci, vel consequat orci nisi in elit.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <br />
+  <br />
+
+
+
+
+
+  <div class="seccion  seccion--destacada  seccion--banderines">
+
+    <div class="seccion">
+      <div class="grid">
+        <div class="contenedor  contenedor--relleno">
+          <h1 class="kilo">Sección destacada</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce quis nulla neque. Proin porta sollicitudin commodo. Integer et nibh sagittis augue tempus lacinia. Ut nec nisl magna. Morbi eu sapien metus. Curabitur malesuada, dolor fringilla accumsan imperdiet, urna augue feugiat orci, vel consequat orci nisi in elit.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <br />
+  <br />
+
+
+
+
+
   <div class="seccion">
-    <h1 class="mega">Lazo imágenes</h1>
-  </div>
-</div>
+    <div class="grid">
+      <div class="contenedor  contenedor--relleno">
 
-<div class="seccion">
-  <div class="contenedor  contenedor--relleno">
-    <div class="media--con-lazo">
-      <a href="#"><img class="imagen--full" src="http://apizcasyamizcas.es/wp-content/uploads/DSC_0043-pizcas.jpg" alt="" /></a>
+        <div class="seccion  seccion--destacada  seccion--restaurantes">
 
-      <div class="lazo">
-        <a href="#"><svg class="forma" viewBox="0 0 32 32"><use xlink:href="#forma-helado"></use></svg> Crema de queso esencia de cabra</a>
+          <div class="seccion--restaurantes__apertura">
+            <small>&nbsp;= EST. 2012 =&nbsp;</small>
+          </div>
+
+          <div class="seccion--restaurantes__contenido">
+            <h1 class="kilo">
+              <svg class="forma" viewBox="0 0 32 32"><use xlink:href="#forma-cubiertos"></use></svg>
+              restaurantes
+              <svg class="forma" viewBox="0 0 32 32"><use xlink:href="#forma-cubiertos"></use></svg>
+            </h1>
+          </div>
+
+          <div class="seccion--restaurantes__cierre">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce quis nulla neque. Proin porta sollicitudin commodo. Integer et nibh sagittis augue tempus lacinia. Ut nec nisl magna. Morbi eu sapien metus. Curabitur malesuada, dolor fringilla accumsan imperdiet, urna augue feugiat orci, vel consequat orci nisi in elit.</p>
+          </div>
+        </div>
       </div>
     </div>
   </div>
-</div>
+
+  <br />
+  <br />
 
 
 
 
-<div class="seccion  seccion--destacada  seccion--fondo-diagonal  seccion--bordes">
+
+
+
+
+
+
+  <div class="seccion  seccion--destacada  seccion--fondo-diagonal  seccion--bordes">
+    <div class="seccion">
+      <h1 class="mega">Lazo imágenes</h1>
+    </div>
+  </div>
+
   <div class="seccion">
-    <h1 class="mega">Encabezados etiquetas</h1>
+    <div class="contenedor  contenedor--relleno">
+      <div class="media--con-lazo">
+        <a href="#"><img class="imagen--full" src="http://apizcasyamizcas.es/wp-content/uploads/DSC_0043-pizcas.jpg" alt="" /></a>
+
+        <div class="lazo">
+          <a href="#"><svg class="forma" viewBox="0 0 32 32"><use xlink:href="#forma-helado"></use></svg> Crema de queso esencia de cabra</a>
+        </div>
+      </div>
+    </div>
   </div>
-</div>
 
-<div class="seccion">
-  <div class="contenedor  contenedor--relleno">
 
-    <h1 class="encabezado-etiqueta  encabezado-etiqueta--redondo">
-      más<br />pizcas y<br />mizcas
-    </h1>
 
-    <br />
 
-    <h1 class="encabezado-etiqueta  encabezado-etiqueta--redondo">
-      pizcas<br />destacadas
-      <svg class="forma" viewBox="0 0 32 32"><use xlink:href="#forma-estrella"></use></svg>
-    </h1>
 
-    <br />
 
-    <h1 class="encabezado-etiqueta  encabezado-etiqueta--redondo">
-      te puede<br />interesar
-      <svg class="forma" viewBox="0 0 32 32"><use xlink:href="#forma-helado"></use></svg>
-    </h1>
 
-    <br />
 
-    <h1 class="encabezado-etiqueta  encabezado-etiqueta--redondo">
-      pizcas<br />semanales
-      <svg class="forma" viewBox="0 0 32 32"><use xlink:href="#forma-menu"></use></svg>
-    </h1>
 
+
+  <div class="seccion  seccion--destacada  seccion--fondo-diagonal  seccion--bordes">
+    <div class="seccion">
+      <h1 class="mega">Encabezados etiquetas</h1>
+    </div>
   </div>
-</div>
 
-
-
-
-
-<div class="seccion  seccion--destacada  seccion--fondo-diagonal  seccion--bordes">
   <div class="seccion">
-    <h1 class="mega">Formularios</h1>
+    <div class="contenedor  contenedor--relleno">
+
+      <h1 class="encabezado-etiqueta  encabezado-etiqueta--redondo">
+        más<br />pizcas y<br />mizcas
+      </h1>
+
+      <br />
+
+
+
+
+
+      <h1 class="encabezado-etiqueta  encabezado-etiqueta--redondo">
+        pizcas<br />destacadas
+        <svg class="forma" viewBox="0 0 32 32"><use xlink:href="#forma-estrella"></use></svg>
+      </h1>
+
+      <br />
+
+
+
+
+
+      <h1 class="encabezado-etiqueta  encabezado-etiqueta--redondo">
+        te puede<br />interesar
+        <svg class="forma" viewBox="0 0 32 32"><use xlink:href="#forma-helado"></use></svg>
+      </h1>
+
+      <br />
+
+
+
+
+
+      <h1 class="encabezado-etiqueta  encabezado-etiqueta--redondo">
+        pizcas<br />semanales
+        <svg class="forma" viewBox="0 0 32 32"><use xlink:href="#forma-menu"></use></svg>
+      </h1>
+
+      <br />
+
+    </div>
   </div>
-</div>
 
-<div class="seccion">
-  <div class="contenedor  contenedor--relleno">
 
-    <form class="formulario  formulario--vertical">
-      <div class="formulario__campo  formulario__campo--un-tercio">
-        <label for="input-texto">Nombre</label>
-        <input id="input-texto" type="text" placeholder="Nombre"/>
-      </div>
 
-      <div class="formulario__campo">
-        <label for="input-texto">Correo electrónico</label>
-        <input id="input-texto" type="text" placeholder="Correo electrónico"/>
-      </div>
 
-      <div class="formulario__campo">
-        <label for="input-area-texto">Comentario</label>
-        <textarea id="input-area-texto"></textarea>
-      </div>
-    </form>
 
+
+
+
+
+
+  <div class="seccion  seccion--destacada  seccion--fondo-diagonal  seccion--bordes">
+    <div class="seccion">
+      <h1 class="mega">Formularios</h1>
+    </div>
   </div>
-</div>
+
+  <div class="seccion">
+    <div class="contenedor  contenedor--relleno">
+
+      <form class="formulario  formulario--vertical">
+        <div class="formulario__campo  formulario__campo--un-tercio">
+          <label for="input-texto">Nombre</label>
+          <input id="input-texto" type="text" placeholder="Nombre"/>
+        </div>
+
+        <div class="formulario__campo">
+          <label for="input-texto">Correo electrónico</label>
+          <input id="input-texto" type="text" placeholder="Correo electrónico"/>
+        </div>
+
+        <div class="formulario__campo">
+          <label for="input-area-texto">Comentario</label>
+          <textarea id="input-area-texto"></textarea>
+        </div>
+      </form>
+
+    </div>
+  </div>
 
 
 
 
 
+
+
+
+
+
+  <!--[if (gt IE 8) | (IEMobile)]><!-->
+  <script type="text/javascript" src="http://pizcas-ux.es/js/defer-1b64.js"></script>
+  <!--<![endif]-->
+
+  <!--[if (lt IE 9) & (!IEMobile)]>
+  <script type="text/javascript" src="http://pizcas-ux.es/js/defer-0b64.js"></script>
+  <![endif]-->
 </body>
 </html>
