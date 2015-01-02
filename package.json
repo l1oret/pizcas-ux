@@ -1,22 +1,22 @@
 {
-  "name": "ux.apizcasyamizcas.es",
+  "name": "Pizcas UX",
   "version": "0.0.1",
   "homepage": "http://l1oret.github.io/pizcas-ux/",
   "description": "Colección de elementos y patrones para el nuevo diseño de apizcasyamizcas.es",
-  "main": "index.js",
+  "main": "index.html",
   "author": "l1oret",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/l1oret/ux.apizcasyamizcas.git"
+    "url": "https://github.com/l1oret/pizcas-ux.git"
   },
   "bugs": {
-    "url": "https://github.com/l1oret/ux.apizcasyamizcas/issues"
+    "url": "https://github.com/l1oret/pizcas-ux/issues"
   },
   "licenses": [
     {
       "type": "MIT",
-      "url": "https://github.com/l1oret/ux.apizcasyamizcas/blob/master/LICENSE"
+      "url": "https://github.com/l1oret/pizcas-ux/blob/master/LICENSE"
     }
   ],
   "devDependencies": {
